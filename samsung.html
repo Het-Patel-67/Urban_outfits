@@ -10,78 +10,87 @@
 
 <body>
     <div class="h-auto bg-white m-0 p-0 overflow-x-hidden">
-        <div class="flex flex-row justify-between items-center h-17">
+       <div class="flex flex-row justify-between items-center h-17">
             <span>
                 <h1 class="hidden md:block mx-12 py-7.5">MOODY STUDIO</h1>
-                <h1 class="mx-6 py-7.5 md:hidden">URBAN OUTFITS</h1>
+                <h1 class="mx-6 py-7.5 md:hidden !text-base !text-[#323334]">URBAN OUTFITTERS</h1>
             </span>
-            <span class="flex flex-row justify-center items-center space-x-4 mr-5 md:py-7.5">
-                 <input type="text" placeholder="Search here.." class="search hidden md:w-50 md:h-6 md:placeholder:italic md:placeholder:text-gray-500 md:p-2 md:border-1 ">
+            <span class="icon flex flex-row justify-center items-center space-x-4 mr-5 md:py-7.5">
+                <input type="text" placeholder="Search here.."
+                    class="search hidden md:w-50 md:h-6 md:placeholder:italic md:placeholder:text-gray-500 md:p-2 md:border-1 ">
                 <img class="hidden md:block h-5 w-5 cursor-pointer" src="./imgs/Vector.png" onclick="search()">
                 <img class="h-4 w-3 cursor-pointer" src="./imgs/Group 40.png">
                 <a href="shoppingbag.html"><img class="h-5 w-5 cursor-pointer" src="./imgs/Group 43.png"></a>
                 <img class="hidden md:block h-4 w-5 cursor-pointer" src="./imgs/Group.png">
                 <div class="drop-cover">
-                    <div class="md:hidden text-2xl cursor-pointer relative drop-trigger" onclick="dropdown()">
+                    <div class="md:hidden text-2xl cursor-pointer relative drop-trigger">
                         &#8801;
                     </div>
-                    <div class="drop-content w-25 hidden bg-[#242424] text-white absolute right-5 z-20">
-                         <div class="border-white border-b-1">
-                            <a href="index.html" class="cursor-pointer">HOME</a>
+                    <div class="drop-content w-[140px] gap-[10px] p-5 hidden bg-[white] text-[#323334] absolute top-[43px] right-0 z-20">
+                        <div class="close cursor-pointer flex justify-end">
+                            &#10005
                         </div>
-                         <div class="border-white border-b-1">
-                            <a href="orders.html" class="cursor-pointer">ORDERS</a>
+                        <div class="">
+                            <a href="index.html"
+                                class="cursor-pointer !font-normal !text-base">Home</a>
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="prestige.html" class="cursor-pointer">PRESTIGE</a>
+                        <div class="">
+                            <a href="prestige.html"
+                                class="cursor-pointer !font-normal !text-base">Prestige</a>
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="godrej.html" class=" cursor-pointer">GODREJ</a>
+                        <div class="">
+                            <a href="godrej.html" class="cursor-pointer !font-normal !text-base">Godrej</a>
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="samsung.html" class="cursor-pointer">SAMSUNG</a>
+                        <div class="">
+                            <a href="samsung.html"
+                                class="cursor-pointer !font-normal !text-base">Samsung</a>
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="handm.html" class=" cursor-pointer">H&M HOME</a>
+                        <div class="">
+                            <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M
+                                Home</a>
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="curlon.html" class=" cursor-pointer">CURLON</a>
+                        <div class="">
+                            <a href="curlon.html" class="cursor-pointer !font-normal !text-base">Curlon</a>
                         </div>
                     </div>
                 </div>
             </span>
         </div>
         <div class="hidden md:block w-98vw ms-12 me-8 -mt-2 h-1 border-b-2 border-black rounded-2xl"></div>
-        <nav class="hidden md:flex flex-row ms-20 py-4">
-            <a href="index.html" class="text-nowrap mr-auto cursor-pointer">HOME</a>
-            <a href="" class="text-nowrap mr-auto cursor-pointer">STORE</a>
-            <a href="orders.html" class="text-nowrap mr-auto cursor-pointer">ORDERS</a>
-            <div class="drop-cover flex flex-col mr-auto">
-                <div class="drop-trigger cursor-pointer relative" onclick="dropdown()">BRAND</div>
-                <div class="drop-content w-25 hidden bg-[#242424] text-white absolute top-25 z-2">
-                    <div class="border-white border-b-1">
-                        <a href="prestige.html" class=" cursor-pointer">PRESTIGE</a>
+        <div class="hidden md:flex flex-row justify-evenly ml-[22px] py-6 w-98vw">
+            <a href="index.html" class="text-nowrap  cursor-pointer !font-bold !text-base">HOME</a>
+            <a href="" class="text-nowrap cursor-pointer !font-bold !text-base">STORE</a>
+            <a href="orders.html" class="text-nowrap cursor-pointer !font-bold !text-base">ORDERS</a>
+            <div class="drop-cover">
+                <div class="drop-trigger cursor-pointer relative font-bold text-base text-[#323334]"
+                    style="font-family: 'Roboto',sans-serif;">BRAND</div>
+                <div class="drop-content w-35 p-5 gap-[8px] hidden  bg-white text-[#323334] absolute top-30 z-2 ">
+                    <div class="close cursor-pointer flex justify-end">
+                        &#10005
                     </div>
-                    <div class="border-white border-b-1">
-                        <a href="godrej.html" class="cursor-pointer">GODREJ</a>
+                    <div class="">
+                        <a href="prestige.html" class="cursor-pointer !font-normal !text-base">Prestige</a>
                     </div>
-                    <div class="border-white border-b-1">
-                        <a href="samsung.html" class="cursor-pointer">SAMSUNG</a>
+                    <div class="">
+                        <a href="godrej.html" class="cursor-pointer !font-normal !text-base">Godrej</a>
                     </div>
-                    <div class="border-white border-b-1">
-                        <a href="handm.html" class="cursor-pointer">H&M HOME</a>
+                    <div class="">
+                        <a href="samsung.html" class="cursor-pointer !font-normal !text-base">Samsung</a>
                     </div>
-                    <div class="border-white border-b-1">
-                        <a href="curlon.html" class="cursor-pointer">CURLON</a>
+                    <div class="">
+                        <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M Home</a>
+                    </div>
+                    <div class="">
+                        <a href="curlon.html" class="cursor-pointer !font-normal !text-base">Curlon</a>
                     </div>
                 </div>
             </div>
 
-            <a href="" class="text-nowrap mr-auto cursor-pointer">PAGES</a>
-            <a href="" class="text-nowrap mr-auto cursor-pointer">ABOUT US</a>
-            <a href="" class="text-nowrap mr-auto cursor-pointer">NEWS</a>
-            <a href="" class="text-nowrap mr-auto cursor-pointer">CONTACT US</a>
-        </nav>
+            <a href="pages.html" class="text-nowrap cursor-pointer !font-bold !text-base">PAGES</a>
+            <a href="aboutus.html" class="text-nowrap cursor-pointer !font-bold !text-base">ABOUT US</a>
+            <a href="news.html" class="text-nowrap cursor-pointer !font-bold !text-base">NEWS</a>
+            <a href="contactus.html" class="text-nowrap cursor-pointer !font-bold !text-base">CONTACT US</a>
+        </div>
         <div class="hidden md:block w-98vw ms-12 me-8 -mt-1 h-1 border-b-2 border-black rounded-2xl"></div>
 
         <div class="flex flex-col lg:flex-row gap-6 lg:ml-12 lg:mt-12 p-4 sm:p-6">
@@ -212,7 +221,7 @@
             </div>
         </div>
 
-         <div id="scroll" onscroll="dotShow()"
+        <div id="scroll" onscroll="dotShow()"
             class="h-70 w-full grid grid-rows-1 grid-flow-col gap-4 mt-6 pr-6 pl-6 overflow-x-auto overflow-y-hidden  md:hidden sm:hidden">
             <div class="elem flex flex-col h-65 w-47 relative">
                 <img src="./imgs/Rectangle 6 (1).png" class="h-65 w-47">
@@ -258,86 +267,85 @@
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
         </div>
-        <div class="hidden md:flex bg-[#323334] text-white py-6 pl-6 flex-row justify-evenly items-center">
-            <div class="flex flex-col gap-3">
-                <h1 class="mt-6 mb-5">URBAN OUTFITTERS</h1>
-                <p class="text-gray-400">
-                    Lorem ipsum dolor sit amet, consectetur <br>Quo ratione officiis ipsum atque.
-                </p>
-                <span class="flex flex-col gap-2">
-                    <h1>121 King Street, Melbourn, 3000</h1>
-                    <h1>contact@urbanooutfitters.com</h1>
-                    <h1>+6 324 589 451</h1>
-                </span>
-                <span class="flex flex-row gap-12 mt-4">
-                    <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png"
-                        alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
-                        src="./imgs/vaadin_youtube.png" alt="">
-                </span>
-            </div>
-            <div class="flex flex-col -mt-12">
-                <h1 class="mb-5">SHOPPING</h1>
-                <span class="text-gray-400">
-                    <p>Your Card</p>
-                    <p>Your Orders</p>
-                    <p>Compared Items</p>
-                    <a href="shoppingbag.html">Whistlist Items</a>
-                    <p class="mb-5">Shipping Deal
-                    </p>
-                </span>
-            </div>
-            <div class="flex flex-col -mt-12">
-                <h1 class="mb-5">MORE LINKS</h1>
-                <span class="text-gray-400">
-                    <p>Blog</p>
-                    <p>Gift Center</p>
-                    <p>Buying Guides</p>
-                    <p>New Articles</p>
-                    <p class="mb-5">Clearance</p>
-                </span>
-            </div>
-            <div class="flex flex-col mt-6">
-                <h1 class="mb-5">FROM THE BLOG</h1>
-                <h1>26th MAY</h1>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt, amet?
-                </p>
-                <p class="text-gray-400">3 comments</p>
-                <div class="hidden md:block w-70 mt-2 mb-5 h-1 border-b-2 border-gray-500 rounded-2xl"></div>
-                <h1>27th MAY</h1>
-                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt, amet?
-                </p>
-                <p class="text-gray-400">3 comments</p>
-            </div>
-        </div>
-        <div class="h-auto w-full flex flex-col items-center gap-5 md:hidden bg-[#323334] text-white">
-            <h1 class="mt-6 mb-10">URBAN OUTFITTERS</h1>
-            <span class="flex flex-row">
-                <img src="./imgs/Vector (6).png">
-                <h1>166</h1>
+        <div class="h-auto w-full flex flex-col place-items-center gap-8 md:hidden bg-[#323334] text-white">
+        <h1 class="mt-6 mb-10 !text-white">URBAN OUTFITTERS</h1>
+        <span class="flex flex-row">
+            <img src="./imgs/Vector (6).png">
+            <p class="!text-white">166</p>
+        </span>
+        <p class="!text-white">
+            121 King Street, Melbourn, 3000
+        </p>
+        <p class="!text-white">
+            contact@urbanooutfitters.com
+        </p>
+        <p class="!text-white">YOUR CARD</p>
+        <p class="!text-white">YOUR ORDERS</p>
+        <p class="!text-white">COMPARED ITEMS</p>
+        <a href="shoppingbag.html" class="cursor-pointer">
+            <p class="!text-white">WHISTLIST ITEMS</p>
+        </a>
+        <p class="!text-white">SHIPPING DEAL</p>
+        <span class="flex flex-row gap-12 mb-8">
+            <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
+                src="./imgs/ant-design_instagram-filled.png" alt=""><img src="./imgs/vaadin_youtube.png" alt="">
+        </span>
+    </div>
+    <div class="hidden md:flex bg-[#323334] text-white py-8 pl-6 flex-row justify-evenly items-start ">
+        <div class="flex flex-col gap-6">
+            <h1 class="mb-5 !text-white">URBAN OUTFITTERS</h1>
+            <p class="!text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur <br>Quo ratione officiis ipsum atque.
+            </p>
+            <span class="flex flex-col gap-2">
+                <h2 class="!text-base !text-white">121 King Street, Melbourn, 3000</h2>
+                <h2 class="!text-base !text-white">contact@urbanooutfitters.com</h2>
+                <h2 class="!text-base !text-white">+6 324 589 451</h2>
             </span>
-            <h1>
-                121 King Street, Melbourn, 3000
-            </h1>
-            <h1>
-                contact@urbanooutfitters.com
-            </h1>
-            <h1>YOUR CARD</h1>
-            <h1>YOUR ORDERS</h1>
-            <h1>COMPARED ITEMS</h1>
-            <a href="shoppingbag.html">WHISTLIST ITEMS</a>
-            <h1 class="mb-5">SHIPPING DEAL</h1>
-            <span class="flex flex-row gap-12">
+            <span class="flex flex-row gap-12 mt-4">
                 <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
                     src="./imgs/ant-design_instagram-filled.png" alt=""><img src="./imgs/vaadin_youtube.png" alt="">
             </span>
-            <span class="bg-black w-full text-sm text-gray-400 text-center">
-                <p class="text-sm text-gray-400 p-3"> Urban Outfitters © - All Rights Reserved</p>
-
+        </div>
+        <div class="flex flex-col gap-1 mr-[2px]">
+            <h2 class="mb-5 !text-base !text-white">SHOPPING</h2>
+            <span class="!text-gray-400 flex flex-col gap-2">
+                <a href="" class="!text-gray-400 !font-light">Your Cart</a>
+                <a href="" class="!text-gray-400 !font-light">Your Orders</a>
+                <a href="" class="!text-gray-400 !font-light">Compared Items</a>
+                <a href="shoppingbag.html" class="cursor-pointer !text-gray-400 !font-light">
+                    Whistlist Items
+                </a>
+                <a href="" class="!text-gray-400 !font-light">Shipping Deal
+                </a>
             </span>
         </div>
-        <div class="bg-black w-full h-auto text-sm text-center hidden md:block">
-            <p class="text-sm text-gray-400 p-3"> Urban Outfitters © - All Rights Reserved</p>
+        <div class="flex flex-col gap-1 mr-[4px]">
+            <h2 class="mb-5 !text-base !text-white text-nowrap">MORE LINKS</h2>
+            <span class="text-gray-400 flex flex-col gap-2">
+                <a href="" class="!text-gray-400 !font-light">Blog</a>
+                <a href="" class="!text-gray-400 !font-light">Gift Center</a>
+                <a href="" class="!text-gray-400 !font-light">Buying Guides</a>
+                <a href="" class="!text-gray-400 !font-light">New Articles</a>
+                <a href="" class="!text-gray-400 !font-light">Clearance</a>
+            </span>
         </div>
+        <div class="flex flex-col !text-base">
+            <h2 class="mb-5 !text-white !text-base">FROM THE BLOG</h2>
+            <p class="!text-gray-400">26th MAY</p>
+            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
+                amet?</p>
+            <p class="!text-gray-400 !font-light">3 comments</p>
+            <div class="hidden md:block w-70 mt-2 mb-5 h-1 border-b-2 border-gray-500 rounded-2xl"></div>
+            <p class="!text-gray-400">27th MAY</p>
+            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
+                amet?</p>
+            <p class="!text-gray-400 !font-light">3 comments</p>
+        </div>
+    </div>
+    <div class="bg-black w-full h-auto text-center block">
+        <p class="!text-sm !text-gray-400 p-3 "> Urban Outfitters © - All Rights Reserved</p>
+    </div>
     </div>
     <script>
         let slideIdx = 0;
@@ -377,43 +385,26 @@
             slide[slideIdx].style.alignItems = "center";
             slide[slideIdx].style.gap = "16px";
         }
-function search()
-{
-   let search = document.querySelector(".search");
-   search.classList.toggle("block");
-   search.classList.toggle("hidden");
-}
-        function dropdown() {
-            const covers = document.querySelectorAll(".drop-cover");
-
-            covers.forEach(wrapper => {
-                const trigger = wrapper.querySelector(".drop-trigger");
-                const content = wrapper.querySelector(".drop-content");
-
-                trigger.addEventListener("click", (e) => {
-                    e.stopPropagation();
-                    content.classList.toggle("hidden");
-                    content.classList.toggle("flex");
-                    content.classList.toggle("flex-col");
-                });
-            });
+        function search() {
+            let search = document.querySelector(".search");
+            search.classList.toggle("block");
+            search.classList.toggle("hidden");
         }
-
-
-        window.addEventListener("click", function (e) {
-            const dropdowns = document.querySelectorAll(".drop-content");
-
-            dropdowns.forEach((dropdown) => {
-                if (!dropdown.classList.contains("hidden")) {
-                    dropdown.classList.add("hidden");
-                    dropdown.classList.remove("flex", "flex-col");
-                }
+        const cover = document.querySelectorAll(".drop-cover");
+        cover.forEach(dropdown => {
+            const contents = dropdown.querySelector(".drop-content");
+            const trigger = dropdown.querySelector(".drop-trigger");
+            const closeBtn = dropdown.querySelector(".close");
+            trigger.addEventListener("click", () => {
+                contents.classList.remove("hidden");
+                contents.classList.add("flex", "flex-col");
             });
-        });
 
-        window.onload = () => {
-            dropdown();
-        };
+            closeBtn.addEventListener("click", () => {
+                contents.classList.add("hidden");
+                contents.classList.remove("flex", "flex-col");
+            });
+        })
         function store(button) {
             const item = button.parentElement;
             const img = item.querySelector(".item-img").getAttribute("src");
@@ -437,7 +428,7 @@ function search()
                 alert("Already Exist in whishlist");
             }
         }
- function dotShow() {
+        function dotShow() {
             let scrollContainer = document.getElementById("scroll");
             let scrollLeft = scrollContainer.scrollLeft;
             let itemWidth = scrollContainer.querySelector(".elem").offsetWidth + 16;

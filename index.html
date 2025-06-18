@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moody studio</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -13,255 +17,261 @@
         <div class="flex flex-row justify-between items-center h-17">
             <span>
                 <h1 class="hidden md:block mx-12 py-7.5">MOODY STUDIO</h1>
-                <h1 class="mx-6 py-7.5 md:hidden">URBAN OUTFITS</h1>
+                <h1 class="mx-6 py-7.5 md:hidden !text-base !text-[#323334]">URBAN OUTFITTERS</h1>
             </span>
             <span class="icon flex flex-row justify-center items-center space-x-4 mr-5 md:py-7.5">
-                <input type="text" placeholder="Search here.." class="search hidden md:w-50 md:h-6 md:placeholder:italic md:placeholder:text-gray-500 md:p-2 md:border-1 ">
+                <input type="text" placeholder="Search here.."
+                    class="search hidden md:w-50 md:h-6 md:placeholder:italic md:placeholder:text-gray-500 md:p-2 md:border-1 ">
                 <img class="hidden md:block h-5 w-5 cursor-pointer" src="./imgs/Vector.png" onclick="search()">
                 <img class="h-4 w-3 cursor-pointer" src="./imgs/Group 40.png">
                 <a href="shoppingbag.html"><img class="h-5 w-5 cursor-pointer" src="./imgs/Group 43.png"></a>
                 <img class="hidden md:block h-4 w-5 cursor-pointer" src="./imgs/Group.png">
                 <div class="drop-cover">
-                    <div class="md:hidden text-2xl cursor-pointer relative drop-trigger" onclick="dropdown()">
+                    <div class="md:hidden text-2xl cursor-pointer relative drop-trigger">
                         &#8801;
                     </div>
-                    <div class="drop-content w-25 hidden bg-[#242424] text-white absolute right-5 z-20">
-                        <div class="border-white border-b-1">
-                            <a href="orders.html" class="cursor-pointer">ORDERS</a>
+                    <div
+                        class="drop-content w-[140px] gap-[10px] p-5 hidden bg-[white] text-[#323334] absolute top-[43px] right-0 z-20">
+                        <div class="close cursor-pointer flex justify-end">
+                            &#10005
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="prestige.html" class="cursor-pointer">PRESTIGE</a>
+                        <div class="">
+                            <a href="prestige.html" class="cursor-pointer !font-normal !text-base">Prestige</a>
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="godrej.html" class=" cursor-pointer">GODREJ</a>
+                        <div class="">
+                            <a href="godrej.html" class="cursor-pointer !font-normal !text-base">Godrej</a>
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="samsung.html" class="cursor-pointer">SAMSUNG</a>
+                        <div class="">
+                            <a href="samsung.html" class="cursor-pointer !font-normal !text-base">Samsung</a>
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="handm.html" class=" cursor-pointer">H&M HOME</a>
+                        <div class="">
+                            <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M
+                                Home</a>
                         </div>
-                        <div class="border-white border-b-1">
-                            <a href="curlon.html" class=" cursor-pointer">CURLON</a>
+                        <div class="">
+                            <a href="curlon.html" class="cursor-pointer !font-normal !text-base">Curlon</a>
                         </div>
                     </div>
                 </div>
             </span>
         </div>
         <div class="hidden md:block w-98vw ms-12 me-8 -mt-2 h-1 border-b-2 border-black rounded-2xl"></div>
-        <nav class="hidden md:flex flex-row ms-20 py-4">
-            <a href="index.html" class="text-nowrap mr-auto cursor-pointer">HOME</a>
-            <a href="" class="text-nowrap mr-auto cursor-pointer">STORE</a>
-            <a href="orders.html" class="text-nowrap mr-auto cursor-pointer">ORDERS</a>
-            <div class="drop-cover flex flex-col mr-auto">
-                <div class="drop-trigger cursor-pointer relative" onclick="dropdown()">BRAND</div>
-                <div class="drop-content w-25 hidden bg-[#242424] text-white absolute top-25 z-2">
-                    <div class="drop-cover border-white border-b-1">
-                        <a href="prestige.html" class="drop-trigger cursor-pointer">PRESTIGE</a>
-
+        <div class="hidden md:flex flex-row justify-evenly ml-[22px] py-6 w-98vw">
+            <a href="index.html" class="text-nowrap  cursor-pointer !font-bold !text-base">HOME</a>
+            <a href="" class="text-nowrap cursor-pointer !font-bold !text-base">STORE</a>
+            <a href="orders.html" class="text-nowrap cursor-pointer !font-bold !text-base">ORDERS</a>
+            <div class="drop-cover">
+                <div class="drop-trigger cursor-pointer relative font-bold text-base text-[#323334]"
+                    style="font-family: 'Roboto',sans-serif;">BRAND</div>
+                <div class="drop-content w-35 p-5 gap-[8px] hidden  bg-white text-[#323334] absolute top-30 z-2 ">
+                    <div class="close cursor-pointer flex justify-end">
+                        &#10005
                     </div>
-                    <div class="drop-cover border-white border-b-1">
-                        <a href="godrej.html" class="drop-trigger cursor-pointer">GODREJ</a>
-
+                    <div class="">
+                        <a href="prestige.html" class="cursor-pointer !font-normal !text-base">Prestige</a>
                     </div>
-                    <div class="drop-cover border-white border-b-1">
-                        <a href="samsung.html" class="drop-trigger cursor-pointer">SAMSUNG</a>
-
+                    <div class="">
+                        <a href="godrej.html" class="cursor-pointer !font-normal !text-base">Godrej</a>
                     </div>
-                    <div class="drop-cover border-white border-b-1">
-                        <a href="handm.html" class="drop-trigger cursor-pointer">H&M HOME</a>
+                    <div class="">
+                        <a href="samsung.html" class="cursor-pointer !font-normal !text-base">Samsung</a>
                     </div>
-                    <div class="drop-cover border-white border-b-1">
-                        <a href="curlon.html" class="drop-trigger cursor-pointer">CURLON</a>
+                    <div class="">
+                        <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M Home</a>
+                    </div>
+                    <div class="">
+                        <a href="curlon.html" class="cursor-pointer !font-normal !text-base">Curlon</a>
                     </div>
                 </div>
             </div>
 
-            <a href="pages.html" class="text-nowrap mr-auto cursor-pointer">PAGES</a>
-            <a href="aboutus.html" class="text-nowrap mr-auto cursor-pointer">ABOUT US</a>
-            <a href="news.html" class="text-nowrap mr-auto cursor-pointer">NEWS</a>
-            <a href="contactus.html" class="text-nowrap mr-auto cursor-pointer">CONTACT US</a>
-        </nav>
+            <a href="pages.html" class="text-nowrap cursor-pointer !font-bold !text-base">PAGES</a>
+            <a href="aboutus.html" class="text-nowrap cursor-pointer !font-bold !text-base">ABOUT US</a>
+            <a href="news.html" class="text-nowrap cursor-pointer !font-bold !text-base">NEWS</a>
+            <a href="contactus.html" class="text-nowrap cursor-pointer !font-bold !text-base">CONTACT US</a>
+        </div>
         <div class="hidden md:block w-98vw ms-12 me-8 -mt-1 h-1 border-b-2 border-black rounded-2xl"></div>
         <div class="hidden md:flex flex-row items-center justify-around mt-8">
             <div class="flex flex-row items-baseline">
                 <img src="./imgs/Vector (1).png" alt="err">
-                <p class="ml-4">FREE SHIPPING</p>
+                <p class="ml-4 !text-xs">FREE SHIPPING</p>
             </div>
             <div class="flex flex-row items-baseline">
                 <img src="./imgs/Vector (2).png" alt="err">
-                <p class="ml-4">100% MONEY BACK</p>
+                <p class="ml-4 !text-xs">100% MONEY BACK</p>
             </div>
             <div class="flex flex-row items-baseline">
                 <img src="./imgs/Vector (3).png" alt="err">
-                <p class="ml-4">SUPPORT 24/7</p>
+                <p class="ml-4 !text-xs">SUPPORT 24/7</p>
             </div>
         </div>
 
         <div id="carousel" class="h-72 md:h-121">
-            <div class=" slide hidden relative overflow-hidden top-0 left-0 h-72 md:h-121">
+            <div class=" slide hidden overflow-hidden top-0 left-0 h-72 md:h-121">
                 <div class="flex flex-col h-72 justify-center items-center md:h-121 relative">
                     <img class="w-screen h-72 z-0 md:h-121 absolute md:w-screen" src="./imgs/Group 178.png">
-                    <div class="ml-44 relative z-10">
-                        <h1>SALE UP 50%</h1>
-                        <h1 class="hidden md:flex">MODERN FURNITURE</h1>
-                        <h1 class="md:hidden">MODERN</h1>
-                        <p class="md:hidden">FURNITURE</p>
+                    <div class="ml-35 relative z-10">
+                        <h2 class="!font-medium !text-sm md:!font-bold md:!text-[22px]">HOT DEALS THIS WEEK</h2>
+                        <h1 class="!text-[#A86A3D]">SALE UP 50%</h1>
+                        <h1 class="hidden md:flex mb-5 !text-[#A86A3D]">MODERN FURNITURE</h1>
+                        <h1 class="md:hidden !text-[#A86A3D] ">MODERN</h1>
+                        <p class="md:hidden mb-5 !text-[#A86A3D]">FURNITURE</p>
                         <button
-                            class="h-12 w-31 items-center cursor-pointer hover:bg-black hover:text-white border-1 border-black"><a
-                                href="chair.html">VIEW
+                            class="group h-12 w-31 items-center cursor-pointer border-1 hover:bg-[#323334] border-black"><a
+                                href="chair.html" class="group-hover:!text-white">VIEW
                                 MORE</a></button>
                     </div>
                 </div>
             </div>
 
-            <div class="slide hidden h-72 overflow-hidden relative md:h-121">
+            <div class="slide hidden h-72 overflow-hidden md:h-121">
                 <div class="flex flex-col h-72 justify-center items-center md:h-121 w-full relative  bg-[#e3e8f1]">
                     <img class="w-50 h-72 md:h-121 absolute md:w-80"
                         src="./imgs/0d61078f-fa98-4e6b-b0b4-4ea023d1e72e_removalai_preview.png">
-                    <div class="ml-54 relative left-5">
-                        <p>CHANGE HOME'S CURTAINS</p>
-                        <h1>SALE UP 50%</h1>
-                        <h1 class="hidden md:flex">BUY LINEN CURTAINS</h1>
-                        <p class="md:hidden">CURTAINS</p>
-                        <button
-                            class="md:h-12 md:w-31 h-10 w-25 items-center cursor-pointer hover:bg-black hover:text-white border-1 border-black"><a
-                                href="curlon.html">VIEW MORE</a></button>
+                    <div class="relative left-20 md:left-50 ">
+                        <h1 class="!text-[#b46086]">SALE UP 50%</h1>
+                        <h1 class="mb-5 text-wrap">BUY LINEN <br>CURTAINS</h1>
+                        <button class="group items-center cursor-pointer border-1 border-black hover:bg-[#323334]">
+                            <a href="curlon.html" class="group-hover:!text-white">VIEW MORE</a></button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="hidden md:grid grid-flow-col grid-rows-1 gap-0 ml-12 mr-10">
-            <div class="hidden md:flex flex-row justify-start items-center h-92 mt-12 bg-[#fafafa]">
+        <div class="hidden sm:grid grid-flow-col grid-cols-2 gap-2 ml-12 mr-10">
+            <div class="hidden sm:flex flex-row justify-start items-center h-92 mt-12 bg-[#fafafa]">
                 <div>
                     <img class="h-88 w-88 ml-0" src="./imgs/image 3.png">
                 </div>
                 <div>
                     <h1>INY VINTAGE CHAIR</h1>
                     <button
-                        class="h-12 w-31 items-center cursor-pointer hover:bg-black hover:text-white border-1 border-black">
-                        <a href="chair.html">VIEW
+                        class="group items-center cursor-pointer hover:bg-[#323334]  border-1 border-black mt-8 mr-4">
+                        <a href="chair.html" class="text-nowrap group-hover:!text-white">VIEW
                             DETAILS</a></button>
                 </div>
             </div>
 
-            <div class="hidden md:flex flex-row justify-start items-center h-92 ml-4 mt-12 bg-[#eae9e7]">
+            <div class="hidden sm:flex flex-row justify-start items-center h-92 mt-12 bg-[#eae9e7] ">
                 <div>
                     <img class="h-92 w-61 ml-0" src="./imgs/image 4.png">
                 </div>
                 <div class="ml-4">
-                    <h1>LARGE TERACOTA VASE</h1>
+                    <h1>LARGE TERACOTA <br>VASE</h1>
                     <button
-                        class="h-12 w-31 items-center cursor-pointer hover:bg-black hover:text-white border-1 border-black"><a
-                            href="vase.html">VIEW
+                        class="group items-center cursor-pointer hover:bg-[#323334]  border-1 border-black mt-8 mr-4"><a
+                            href="vase.html" class="text-nowrap group-hover:!text-white">VIEW
                             DETAILS</a></button>
                 </div>
             </div>
         </div>
-        <div class="hidden md:grid grid-cols-4 gap-3 ml-12 mr-10 h-auto mt-10">
-            <div class="h-141 relative group">
+        <div
+            class="hidden item-container md:grid md:grid-cols-4 sm:grid sm:grid-cols-2 sm:gap-3 md:gap-3 ml-12 mr-10 mb-12 h-auto mt-10 items-end">
+            <div class="h-141 relative group ">
                 <img id="deco" class="h-141"
                     src="./imgs/duck-cotton-printed-curtains-pack-of-2-and-100percent-cotton-trance-home-linen-13.webp">
                 <div
-                    class="hoverContainer px-3 hidden group-hover:flex flex-col absolute top-0 justify-center items-center gap-3 h-141 bg-[#00000057] text-white w-full">
-                    <h1 class="mb-3">DECOR</h1>
-                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed at beatae ab,
+                    class="hoverContainer p-5 hidden group-hover:flex flex-col absolute top-0 justify-center items-center gap-3 h-141 bg-[#00000057] text-white w-full">
+                    <h1 class="mb-3 !text-white">DECOR</h1>
+                    <p class="mb-3 !text-xs !text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed at
+                        beatae ab,
                         quae a ipsam quis nostrum incidunt maiores voluptatum minima ex eius nihil eos sunt numquam,
                         consectetur earum!</p>
-                    <button class="cursor-pointer hover:bg-black text-white border-white border-2 h-15 w-31">VIEW
+                    <button class="cursor-pointer hover:bg-black !text-white border-white border-2 !text-sm">VIEW
                         ALL</button>
                 </div>
             </div>
-            <div class="h-141 flex flex-col items-start">
+            <div class="h-141 flex flex-col gap-3 mt-4 items-start">
                 <img class="h-105" src="./imgs/Rectangle 6 (1).png">
-                <h1><a href="towel.html">Linen Beach towel</a></h1>
+                <h2><a href="towel.html" class="!text-lg !font-bold">Linen Beach towel</a></h2>
                 <img src="./imgs/Group 10.png">
-                <h1>30$</h1>
+                <h2>30$</h2>
             </div>
-            <div class="h-141 flex flex-col items-start">
+            <div class="h-141 flex flex-col gap-3 mt-4 items-start">
                 <img class="h-105" src="./imgs/Rectangle 7.png">
-                <h1><a href="glassbox.html">Square Clear Glass Box</a></h1>
+                <h2><a href="glassbox.html" class="!text-lg !font-bold">Square Clear Glass Box</a></h2>
                 <img src="./imgs/Group 10.png">
-                <h1>30$</h1>
+                <h2>30$</h2>
             </div>
-            <div class="h-141 flex flex-col items-start">
+            <div class="h-141 flex flex-col gap-3 mt-4 items-start">
                 <img class="h-105" src="./imgs/Rectangle 8.png">
-                <h1><a href="plates.html">4-pack of ceramic plates</a></h1>
+                <h2><a href="plates.html" class="!text-lg !font-bold">4-pack of ceramic plates</a></h2>
                 <img src="./imgs/Group 10.png">
-                <h1>30$</h1>
+                <h2>30$</h2>
             </div>
-            <div class="h-141 flex flex-col items-start">
+            <div class="h-141 flex flex-col gap-3 mt-4 items-start">
                 <img class="h-105" src="./imgs/Rectangle 10.png">
-                <h1><a href="glassbox.html">Large clear glass box</a></h1>
+                <h2><a href="glassbox.html" class="!text-lg !font-bold">Large clear glass box</a></h2>
                 <img src="./imgs/Group 10.png">
-                <h1>30$</h1>
+                <h2>30$</h2>
             </div>
-            <div class="h-141 flex flex-col items-start">
+            <div class="h-141 flex flex-col gap-3 mt-4 items-start">
                 <img class="h-105" src="./imgs/Rectangle 11.png">
-                <h1><a href="jute.html">Round Jute placement</a></h1>
+                <h2><a href="jute.html" class="!text-lg !font-bold">Round Jute placement</a></h2>
                 <img src="./imgs/Group 10.png">
-                <h1>30$</h1>
+                <h2>30$</h2>
             </div>
-            <div class="h-141 flex flex-col items-start">
+            <div class="h-141 flex flex-col gap-3 mt-4 items-start">
                 <img class="h-105" src="./imgs/Rectangle 12.png">
-                <h1><a href="basket.html">Metal wire basket</a></h1>
+                <h2><a href="basket.html" class="!text-lg !font-bold">Metal wire basket</a></h2>
                 <img src="./imgs/Group 10.png">
-                <h1>30$</h1>
+                <h2>30$</h2>
             </div>
             <div class="h-141 relative group">
                 <img id="deco" class="h-141" src="./imgs/bag.jpg">
                 <div
-                    class="hoverContainer2 hidden group-hover:flex px-3 flex-col absolute top-0 justify-center items-center gap-3 h-141 bg-[#00000057] text-white w-full">
-                    <h1 class="mb-3">BOHO CHIC</h1>
-                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed at beatae ab,
+                    class="hoverContainer2 hidden group-hover:flex p-5 flex-col absolute top-0 justify-center items-center gap-3 h-141 bg-[#00000057] text-white w-full">
+                    <h1 class="mb-3 !text-white">BOHO CHIC</h1>
+                    <p class="mb-3 !text-xs !text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed at
+                        beatae ab,
                         quae a ipsam quis nostrum incidunt maiores voluptatum minima ex eius nihil eos sunt numquam,
                         consectetur earum!</p>
-                    <button class="cursor-pointer hover:bg-black text-white border-white border-2 h-15 w-31">VIEW
+                    <button
+                        class="cursor-pointer hover:bg-black !text-white border-white border-2 h-15 w-31 !text-sm">VIEW
                         ALL</button>
                 </div>
             </div>
         </div>
 
         <div id="scroll" onscroll="dotShow()"
-            class="h-70 w-full grid grid-rows-1 grid-flow-col gap-4 mt-6 pr-6 pl-6 overflow-x-auto overflow-y-hidden  md:hidden">
+            class="h-70 w-full grid grid-rows-1 grid-flow-col gap-4 mt-6 pr-6 pl-6 overflow-x-auto overflow-y-hidden sm:hidden md:hidden">
             <div class="elem flex flex-col h-65 w-47 relative">
                 <img src="./imgs/Rectangle 6 (1).png" class="h-65 w-47">
                 <div class="h-18 w-full p-2.5 bg-[#b7b79a60] absolute bottom-0">
-                    <h2><a href="towel.html">Linen Beach towel</a></h2>
-                    <h2>30$</h2>
+                    <a href="towel.html" class="!font-bold !text-white">Linen Beach towel</a>
+                    <h2 class=" !text-white">30$</h2>
                 </div>
             </div>
             <div class="elem flex flex-col h-65 w-47 relative">
                 <img src="./imgs/Rectangle 8.png" class="h-65 w-47">
                 <div class="absolute bottom-0 w-full h-18 p-2.5  bg-[#b7b79a60]">
-                    <h2><a href="plates.html">Ceramic plates</a></h2>
-                    <h2>14$</h2>
+                    <a href="plates.html" class="!font-bold !text-white">Ceramic plates</a>
+                    <h2 class=" !text-white">14$</h2>
                 </div>
             </div>
             <div class="elem flex flex-col h-65 w-47 relative">
                 <img src="./imgs/Rectangle 12.png" class="h-65 w-47 ">
                 <div class="absolute bottom-0 w-full h-18 p-2.5 bg-[#b7b79a60]">
-                    <h2><a href="basket.html">Metal wire basket</a></h2>
-                    <h2>20$</h2>
+                    <a href="basket.html" class="!font-bold !text-white">Metal wire basket</a>
+                    <h2 class=" !text-white">20$</h2>
                 </div>
             </div>
             <div class="elem flex flex-col h-65 w-47 relative">
                 <img src="./imgs/Rectangle 11.png" class="h-65 w-47">
                 <div class="absolute bottom-0 w-full h-18 p-2.5 bg-[#b7b79a60]">
-                    <h2><a href="jute.html"> Jute placement</a></h2>
-                    <h2>10$</h2>
+                    <a href="jute.html" class="!font-bold !text-white"> Jute placement</a>
+                    <h2 class=" !text-white">10$</h2>
                 </div>
             </div>
             <div class="elem flex flex-col h-65 w-47 relative">
                 <img src="./imgs/Rectangle 7.png" class="h-65 w-47 ">
                 <div class="absolute bottom-0 w-full h-18 p-2.5 bg-[#b7b79a60]">
-                    <h2><a href="glassbox.html">Large clear glass box</a></h2>
-                    <h2>12$</h2>
+                    <a href="glassbox.html" class="!font-bold !text-white">Large clear glass box</a>
+                    <h2 class=" !text-white">12$</h2>
                 </div>
             </div>
         </div>
-        <div class="dot h-2 flex justify-center md:hidden">
+        <div class="dot h-2 flex justify-center sm:hidden md:hidden">
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
@@ -269,94 +279,95 @@
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
         </div>
 
-        <div class="flex flex-row justify-start items-center h-51 mt-12 bg-[#fafafa] md:hidden">
+        <div class="flex flex-row justify-start items-center h-51 mb-12 mt-12 bg-[#fafafa] md:hidden">
             <div>
                 <img class="h-51 w-[382px] ml-0" src="./imgs/image 3.png">
             </div>
             <div class="mr-5">
-                <h1>INY VINTAGE CHAIR</h1>
-                <button
-                    class="h-12 w-31 items-center cursor-pointer cursor-move:bg-black hover:text-white border-1 border-black"><a href="chair.html">VIEW DETAILS</a></button>
+                <h1 class="mb-5">INY VINTAGE CHAIR</h1>
+                <button class="group items-center cursor-pointer hover:bg-[#323334] border-1 border-black"><a
+                        href="chair.html" class="text-nowrap group-hover:!text-white">VIEW DETAILS</a></button>
             </div>
         </div>
-        <div class=" h-51 mt-12 relative md:h-128">
-            <img class="h-51 w-screen ml-0 object-cover md:h-128 md:object-contain" src="./imgs/Rectangle 13.png">
-            <div class="text-center mr-5 p-5 h-35 w-48 bg-[#ffffff90] ml-6 absolute top-10 md:w-136 md:h-70 md:mt-15">
-                <h1>BED SHEET SETS</h1>
+        <div class="h-51 relative md:h-128">
+            <img class="h-51 w-screen ml-0 object-fill sm:object-fill md:h-full " src="./imgs/Rectangle 13.png">
+            <div
+                class="flex flex-col gap-4 justify-center items-center  p-5 h-35 w-48 bg-[#ffffffc0] left-10 md:left-22 absolute top-10 md:w-130 md:h-70 md:mt-15">
+                <h1>BEDSHEET SETS</h1>
+                <h1 class="hidden md:block !text-[#A86A3D]">$50 </h1>
                 <p class="hidden md:block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
                     reprehenderit vero quam doloribus obcaecati blanditiis illum, tenetur totam quis ipsam quo iusto qui
                     expedita autem dolores adipisci porro odio beatae?</p>
-                <button
-                    class="h-12 w-31 items-center cursor-pointer hover:bg-black hover:text-white border-1 border-black"><a
-                        href="handm.html">VIEW
+                <button class="group items-center cursor-pointer hover:bg-[#323334]  border-1 border-black"><a
+                        href="handm.html" class="group-hover:!text-white">VIEW
                         DETAILS</a></button>
             </div>
         </div>
         <!-- PRODUCTS -->
-        <h1 class="my-6">TOP RATING</h1>
+        <h1 class="m-12">TOP RATING</h1>
         <!-- PRODUCTS MD -->
         <div class="gridContainer hidden md:grid md:grid-cols-3 gap-y-6 ml-12">
             <div class="h-77 flex flex-row n"><img src="./imgs/Rectangle 26.png">
-                <div class="mx-4 flex w-full flex-col justify-center min-w-24 overflow-hidden">
-                    <h1 class="text-wrap">TRAY WITH FOOT</h1>
+                <div class="mx-4 flex w-full gap-3 flex-col justify-center min-w-24 overflow-hidden">
+                    <h2 class="text-wrap">Tray With Foot</h2>
                     <img class="w-24" src="./imgs/Group 10.png">
-                    <h1>30$</h1>
+                    <h2>30$</h2>
                 </div>
             </div>
             <div class="h-77 flex flex-row"><img src="./imgs/Rectangle 27.png">
-                <div class="mx-4 w-24 flex flex-col justify-center">
-                    <h1 class="text-wrap">TWILL SEAT CUSION</h1>
+                <div class="mx-4 w-24 gap-3 flex flex-col justify-center">
+                    <h2 class="text-wrap">Twill Seat Cushion</h2>
                     <img class="w-24" src="./imgs/Group 10.png">
-                    <h1>30$</h1>
+                    <h2>30$</h2>
                 </div>
             </div>
             <div class="h-77 flex flex-row"><img src="./imgs/Rectangle 28.png">
-                <div class="mx-4 flex flex-col justify-center">
-                    <h1 class="text-wrap">FLUTED BEVAREGE GLASS</h1>
+                <div class="mx-4 flex gap-3 flex-col justify-center">
+                    <h2 class="text-wrap">Fluted Bevarege Glass</h2>
                     <img class="w-24" src="./imgs/Group 10.png">
-                    <h1>30$</h1>
+                    <h2>30$</h2>
                 </div>
             </div>
             <div class="h-77 flex flex-row"><img src="./imgs/Rectangle 30.png">
-                <div class="mx-4 flex flex-col justify-center">
-                    <h1 class="text-wrap">4-PACK CERAMIC CUPS</h1>
+                <div class="mx-4 flex gap-3 flex-col justify-center">
+                    <h2 class="text-wrap">4-pack Ceramic Cups</h2>
                     <img class="w-24" src="./imgs/Group 10.png">
-                    <h1>30$</h1>
+                    <h2>30$</h2>
                 </div>
             </div>
             <div class="h-77 flex flex-row"><img src="./imgs/Rectangle 31.png">
-                <div class="mx-4 flex flex-col justify-center">
-                    <h1 class="text-wrap">2-PACK LINEN NEPKIN</h1>
+                <div class="mx-4 flex gap-3 flex-col justify-center">
+                    <h2 class="text-wrap">2-pack Linen Nepkin</h2>
                     <img class="w-24" src="./imgs/Group 10.png">
-                    <h1>30$</h1>
+                    <h2>30$</h2>
                 </div>
             </div>
             <div class="h-77 flex flex-row"><img src="./imgs/Rectangle 29.png">
-                <div class="mx-4 flex flex-col justify-center">
-                    <h1 class="text-wrap">CERAMIC EGG CUP</h1>
+                <div class="mx-4 flex gap-3 flex-col justify-center">
+                    <h2 class="text-wrap">Ceramic Egg Cup</h2>
                     <img class="w-24" src="./imgs/Group 10.png">
-                    <h1>30$</h1>
+                    <h2>30$</h2>
                 </div>
             </div>
             <div class="h-77 flex flex-row"><img src="./imgs/Rectangle 32.png">
                 <div class="flex mx-4 flex-col justify-center">
-                    <h1 class="text-wrap">GLAZED STONEWARE PLATE</h1>
+                    <h2 class="text-wrap">Glazed Stoneware Plate</h2>
                     <img class="w-24" src="./imgs/Group 10.png">
-                    <h1>30$</h1>
+                    <h2>30$</h2>
                 </div>
             </div>
             <div class="h-77 flex flex-row"><img src="./imgs/Rectangle 33.png">
-                <div class="flex mx-4 flex-col justify-center">
-                    <h1 class="text-wrap">BAMBOO BOX</h1>
+                <div class="flex mx-4 gap-3 flex-col justify-center">
+                    <h2 class="text-wrap">Bamboo Box</h2>
                     <img class="w-24" src="./imgs/Group 10.png">
-                    <h1>30$</h1>
+                    <h2>30$</h2>
                 </div>
             </div>
             <div class="h-77 flex flex-row"><img src="./imgs/Rectangle 34.png">
-                <div class="flex w-32 mx-4 flex-col justify-center">
-                    <h1 class="text-wrap">METAL CUTLERY BASKET</h1>
+                <div class="flex w-32 mx-4 gap-3 flex-col justify-center">
+                    <h2 class="text-wrap">Metal Cutlery Basket</h2>
                     <img class="w-24" src="./imgs/Group 10.png">
-                    <h1>30$</h1>
+                    <h2>30$</h2>
                 </div>
             </div>
         </div>
@@ -365,78 +376,78 @@
             <div class="w-full grid grid-rows-3 grid-flow-col ml-4">
                 <div class="elem2 mt-6 h-40 w-screen flex flex-row ">
                     <img class="h-40 w-32" src="./imgs/Rectangle 26.png">
-                    <div class="flex w-32 ml-4 flex-col justify-center">
-                        <h1>TRAY WITH FOOT</h1>
+                    <div class="flex w-32 ml-4 flex-col justify-center gap-3">
+                        <p>Tray With Foot</p>
                         <img class="w-24" src="./imgs/Group 10.png">
-                        <h1>30$</h1>
+                        <h2>30$</h2>
                     </div>
                 </div>
                 <div class="elem2 mt-6 h-40 w-screen flex flex-row">
                     <img class="h-40 w-32" src="./imgs/Rectangle 27.png">
-                    <div class="flex w-32 ml-4 flex-col justify-center">
-                        <h1>TWILL SEAT CUSION</h1>
+                    <div class="flex w-32 ml-4 flex-col justify-center gap-3">
+                        <p>Twill Seat Cushion</p>
                         <img class="w-24" src="./imgs/Group 10.png">
-                        <h1>30$</h1>
+                        <h2>30$</h2>
                     </div>
                 </div>
                 <div class="elem2 mt-6 h-40 w-screen flex flex-row">
                     <img class="h-40 w-32" src="./imgs/Rectangle 28.png">
-                    <div class="flex w-32 ml-4 flex-col justify-center">
-                        <h1>FLUTED BEVAREGE GLASS</h1>
+                    <div class="flex w-32 ml-4 flex-col justify-center gap-3">
+                        <p>Fluted Bevarage Glass</p>
                         <img class="w-24" src="./imgs/Group 10.png">
-                        <h1>30$</h1>
+                        <h2>30$</h2>
                     </div>
                 </div>
 
 
                 <div class="elem2 mt-6 h-40 w-screen flex flex-row">
                     <img class="h-40 w-32" src="./imgs/Rectangle 30.png">
-                    <div class="flex w-32 ml-4 flex-col justify-center">
-                        <h1>4-PACK CERAMIC CUPS</h1>
+                    <div class="flex w-32 ml-4 flex-col justify-center gap-3">
+                        <p>4-Pack Ceramic Cup</p>
                         <img class="w-24" src="./imgs/Group 10.png">
-                        <h1>30$</h1>
+                        <h2>30$</h2>
                     </div>
                 </div>
                 <div class="elem2 mt-6 h-40 w-screen flex flex-row">
                     <img class="h-40 w-32" src="./imgs/Rectangle 32.png">
-                    <div class="flex w-32 mx-4 flex-col justify-center">
-                        <h1 class="text-wrap">GLAZED STONEWARE PLATE</h1>
+                    <div class="flex w-32 mx-4 flex-col justify-center gap-3">
+                        <p class="text-wrap">Glazed Stoneware Plate</p>
                         <img class="w-24" src="./imgs/Group 10.png">
-                        <h1>30$</h1>
+                        <h2>30$</h2>
                     </div>
                 </div>
                 <div class="elem2 mt-6 h-40 w-screen flex flex-row">
                     <img class="h-40 w-32" src="./imgs/Rectangle 31.png">
-                    <div class="flex w-32 ml-4 flex-col justify-center">
-                        <h1>2-PACK OF LINEN NEPKIN</h1>
+                    <div class="flex w-32 ml-4 flex-col justify-center gap-3">
+                        <p>2-Pack of Linen Nepkin</p>
                         <img class="w-24" src="./imgs/Group 10.png">
-                        <h1>30$</h1>
+                        <h2>30$</h2>
                     </div>
                 </div>
 
 
                 <div class="elem2 mt-6 h-40 w-screen flex flex-row">
                     <img class="h-40 w-32" src="./imgs/Rectangle 29.png">
-                    <div class="flex w-32 ml-4 flex-col justify-center">
-                        <h1>CERAMIC EGG CUP</h1>
+                    <div class="flex w-32 ml-4 flex-col justify-center gap-3">
+                        <p>Ceramic Egg Cup</p>
                         <img class="w-24" src="./imgs/Group 10.png">
-                        <h1>30$</h1>
+                        <h2>30$</h2>
                     </div>
                 </div>
                 <div class="elem2 mt-6 h-40 w-screen flex flex-row">
                     <img class="h-40 w-32" src="./imgs/Rectangle 33.png">
-                    <div class="flex w-32 ml-4 flex-col justify-center">
-                        <h1>BAMBOO BOX</h1>
+                    <div class="flex w-32 ml-4 flex-col justify-center gap-3">
+                        <p>Bamboo Box</p>
                         <img class="w-24" src="./imgs/Group 10.png">
-                        <h1>30$</h1>
+                        <h2>30$</h2>
                     </div>
                 </div>
                 <div class="elem2 mt-6 h-40 w-screen flex flex-row">
                     <img class="h-40 w-32" src="./imgs/Rectangle 34.png">
-                    <div class="flex w-32 ml-4 flex-col justify-center">
-                        <h1>METAL CUTLERY BASKET</h1>
+                    <div class="flex w-32 ml-4 flex-col justify-center gap-3">
+                        <p>Metal Cutlery Basket</p>
                         <img class="w-24" src="./imgs/Group 10.png">
-                        <h1>30$</h1>
+                        <h2>30$</h2>
                     </div>
                 </div>
             </div>
@@ -448,101 +459,103 @@
         </div>
     </div>
     <div class="hidden md:block md:text-center md:my-10">
-        <button class="h-13 w-92  bg-black text-white">
+        <button class="h-13 w-92  bg-black text-white cursor-pointer">
             LOAD MORE PRODUCTS
         </button>
     </div>
-    <div class="block ml-6 mt-6 md:flex md:flex-row md:justify-center md:items-center">
+    <div class="flex flex-col ml-6 my-20 md:flex-row md:justify-center md:items-center">
         <span>
-            <h1 class="mb-3"> SIGN UP FOR THE NEWSLETTER</h1>
-            <h2 class="mb-3">SUBSCRIBE FOR LATEST STORIES AND PROMOTIONS</h2>
+            <h1 class="mb-3 text-nowrap"> SIGN UP FOR THE NEWSLETTER</h1>
+            <p class="mb-3 !font-normal !text-lg">Subscribe for latest stories and promotions</p>
         </span>
-        <div class="md:w-150 my-5 flex flex-row px-6 md:justify-end pr-15">
+        <div class="md:w-150 my-5 flex flex-row  md:justify-end pr-15">
             <input
-                class="h-10 w-60 border-black border-1 focus:outline-none placeholder-gray-400 placeholder:text-sm placeholder:p-2 "
+                class="h-10 w-60 border-black border-1 p-2 focus:outline-none placeholder-gray-400 placeholder:text-sm placeholder:p-2 "
                 type="textarea" placeholder="Enter your email address">
             <img class="h-10 w-16" src="./imgs/Group 195.png">
         </div>
     </div>
 
-    <div class="h-auto w-full flex flex-col items-center gap-5 md:hidden bg-[#323334] text-white">
-        <h1 class="mt-6 mb-10">URBAN OUTFITTERS</h1>
+    <div class="h-auto w-full flex flex-col place-items-center gap-8 md:hidden bg-[#323334] text-white">
+        <h1 class="mt-6 mb-10 !text-white">URBAN OUTFITTERS</h1>
         <span class="flex flex-row">
             <img src="./imgs/Vector (6).png">
-            <h1>166</h1>
+            <p class="!text-white">166</p>
         </span>
-        <h1>
+        <p class="!text-white">
             121 King Street, Melbourn, 3000
-        </h1>
-        <h1>
+        </p>
+        <p class="!text-white">
             contact@urbanooutfitters.com
-        </h1>
-        <h1>YOUR CARD</h1>
-        <h1>YOUR ORDERS</h1>
-        <h1>COMPARED ITEMS</h1>
-        <a href="shoppingbag.html" class="cursor-pointer"><h1>WHISTLIST ITEMS</h1></a>
-        <h1 class="mb-5">SHIPPING DEAL</h1>
-        <span class="flex flex-row gap-12">
+        </p>
+        <p class="!text-white">YOUR CARD</p>
+        <p class="!text-white">YOUR ORDERS</p>
+        <p class="!text-white">COMPARED ITEMS</p>
+        <a href="shoppingbag.html" class="cursor-pointer">
+            <p class="!text-white">WHISTLIST ITEMS</p>
+        </a>
+        <p class="!text-white">SHIPPING DEAL</p>
+        <span class="flex flex-row gap-12 mb-8">
             <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
                 src="./imgs/ant-design_instagram-filled.png" alt=""><img src="./imgs/vaadin_youtube.png" alt="">
         </span>
-        <span class="bg-black w-full text-sm text-gray-400 text-center">
-            <p class="text-sm text-gray-400 p-3"> Urban Outfitters © - All Rights Reserved</p>
-
-        </span>
     </div>
-    <div class="hidden md:flex bg-[#323334] text-white py-6 pl-6 flex-row justify-evenly items-center">
-        <div class="flex flex-col gap-3">
-            <h1 class="mt-6 mb-5">URBAN OUTFITTERS</h1>
-            <p class="text-gray-400">
+    <div class="hidden md:flex bg-[#323334] text-white py-8 pl-6 flex-row justify-evenly items-start ">
+        <div class="flex flex-col gap-6">
+            <h1 class="mb-5 !text-white">URBAN OUTFITTERS</h1>
+            <p class="!text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur <br>Quo ratione officiis ipsum atque.
             </p>
             <span class="flex flex-col gap-2">
-                <h1>121 King Street, Melbourn, 3000</h1>
-                <h1>contact@urbanooutfitters.com</h1>
-                <h1>+6 324 589 451</h1>
+                <h2 class="!text-base !text-white">121 King Street, Melbourn, 3000</h2>
+                <h2 class="!text-base !text-white">contact@urbanooutfitters.com</h2>
+                <h2 class="!text-base !text-white">+6 324 589 451</h2>
             </span>
             <span class="flex flex-row gap-12 mt-4">
                 <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
                     src="./imgs/ant-design_instagram-filled.png" alt=""><img src="./imgs/vaadin_youtube.png" alt="">
             </span>
         </div>
-        <div class="flex flex-col -mt-12">
-            <h1 class="mb-5">SHOPPING</h1>
-            <span class="text-gray-400">
-                <p>Your Card</p>
-                <p>Your Orders</p>
-                <p>Compared Items</p>
-                <a href="shoppingbag.html" class="cursor-pointer"><h1>Whistlist Items</a>
-                <p class="mb-5">Shipping Deal
-                </p>
+        <div class="flex flex-col gap-1 mr-[2px]">
+            <h2 class="mb-5 !text-base !text-white">SHOPPING</h2>
+            <span class="!text-gray-400 flex flex-col gap-2">
+                <a href="" class="!text-gray-400 !font-light">Your Cart</a>
+                <a href="" class="!text-gray-400 !font-light">Your Orders</a>
+                <a href="" class="!text-gray-400 !font-light">Compared Items</a>
+                <a href="shoppingbag.html" class="cursor-pointer !text-gray-400 !font-light">
+                    Whistlist Items
+                </a>
+                <a href="" class="!text-gray-400 !font-light">Shipping Deal
+                </a>
             </span>
         </div>
-        <div class="flex flex-col -mt-12">
-            <h1 class="mb-5">MORE LINKS</h1>
-            <span class="text-gray-400">
-                <p>Blog</p>
-                <p>Gift Center</p>
-                <p>Buying Guides</p>
-                <p>New Articles</p>
-                <p class="mb-5">Clearance</p>
+        <div class="flex flex-col gap-1 mr-[4px]">
+            <h2 class="mb-5 !text-base !text-white text-nowrap">MORE LINKS</h2>
+            <span class="text-gray-400 flex flex-col gap-2">
+                <a href="" class="!text-gray-400 !font-light">Blog</a>
+                <a href="" class="!text-gray-400 !font-light">Gift Center</a>
+                <a href="" class="!text-gray-400 !font-light">Buying Guides</a>
+                <a href="" class="!text-gray-400 !font-light">New Articles</a>
+                <a href="" class="!text-gray-400 !font-light">Clearance</a>
             </span>
         </div>
-        <div class="flex flex-col mt-6">
-            <h1 class="mb-5">FROM THE BLOG</h1>
-            <h1>26th MAY</h1>
-            <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt, amet?</p>
-            <p class="text-gray-400">3 comments</p>
+        <div class="flex flex-col !text-base">
+            <h2 class="mb-5 !text-white !text-base">FROM THE BLOG</h2>
+            <p class="!text-gray-400">26th MAY</p>
+            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
+                amet?</p>
+            <p class="!text-gray-400 !font-light">3 comments</p>
             <div class="hidden md:block w-70 mt-2 mb-5 h-1 border-b-2 border-gray-500 rounded-2xl"></div>
-            <h1>27th MAY</h1>
-            <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt, amet?</p>
-            <p class="text-gray-400">3 comments</p>
+            <p class="!text-gray-400">27th MAY</p>
+            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
+                amet?</p>
+            <p class="!text-gray-400 !font-light">3 comments</p>
         </div>
     </div>
-    <div class="bg-black w-full h-auto text-sm text-center hidden md:block">
-        <p class="text-sm text-gray-400 p-3 "> Urban Outfitters © - All Rights Reserved</p>
+    <div class="bg-black w-full h-auto text-center block">
+        <p class="!text-sm !text-gray-400 p-3 "> Urban Outfitters © - All Rights Reserved</p>
     </div>
-    </div>
+    
     <script src="script.js">
     </script>
 </body>

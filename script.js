@@ -48,37 +48,25 @@ function dotShow2() {
     });
 }
 
-function dropdown() {
-    const covers = document.querySelectorAll(".drop-cover");
-
-    covers.forEach(wrapper => {
-        const trigger = wrapper.querySelector(".drop-trigger");
-        const content = wrapper.querySelector(".drop-content");
-
-        trigger.addEventListener("click", (e) => {
-            e.stopPropagation();
-            content.classList.toggle("hidden");
-            content.classList.toggle("flex");
-            content.classList.toggle("flex-col");
-        });
+const cover = document.querySelectorAll(".drop-cover");
+cover.forEach(dropdown => {
+    const contents = dropdown.querySelector(".drop-content");
+    const trigger = dropdown.querySelector(".drop-trigger");
+    const closeBtn = dropdown.querySelector(".close");
+    trigger.addEventListener("click", () => {
+        contents.classList.remove("hidden");
+        contents.classList.add("flex", "flex-col");
     });
-}
-window.addEventListener("click", function (e) {
-    const dropdowns = document.querySelectorAll(".drop-content");
-    dropdowns.forEach((dropdown) => {
-        if (!dropdown.classList.contains("hidden")) {
-            dropdown.classList.add("hidden");
-            dropdown.classList.remove("flex", "flex-col");
-        }
-    });
-});
 
-window.onload = () => {
-    dropdown();
-};
-function search()
-{
-   let search = document.querySelector(".search");
-   search.classList.toggle("block");
-   search.classList.toggle("hidden");
+    closeBtn.addEventListener("click", () => {
+        contents.classList.add("hidden");
+        contents.classList.remove("flex", "flex-col");
+    });
+})
+
+
+function search() {
+    let search = document.querySelector(".search");
+    search.classList.toggle("block");
+    search.classList.toggle("hidden");
 }
