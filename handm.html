@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>h&m home</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="h-auto bg-white m-0 p-0 overflow-x-hidden">
-       <div class="flex flex-row justify-between items-center h-17">
+        <div class="flex flex-row justify-between items-center h-17">
             <span>
                 <h1 class="hidden md:block mx-12 py-7.5">MOODY STUDIO</h1>
                 <h1 class="mx-6 py-7.5 md:hidden !text-base !text-[#323334]">URBAN OUTFITTERS</h1>
@@ -26,24 +30,22 @@
                     <div class="md:hidden text-2xl cursor-pointer relative drop-trigger">
                         &#8801;
                     </div>
-                    <div class="drop-content w-[140px] gap-[10px] p-5 hidden bg-[white] text-[#323334] absolute top-[43px] right-0 z-20">
+                    <div
+                        class="drop-content w-[140px] gap-[10px] p-5 hidden bg-[white] text-[#323334] absolute top-[43px] right-0 z-20">
                         <div class="close cursor-pointer flex justify-end">
                             &#10005
                         </div>
                         <div class="">
-                            <a href="index.html"
-                                class="cursor-pointer !font-normal !text-base">Home</a>
+                            <a href="index.html" class="cursor-pointer !font-normal !text-base">Home</a>
                         </div>
                         <div class="">
-                            <a href="prestige.html"
-                                class="cursor-pointer !font-normal !text-base">Prestige</a>
+                            <a href="prestige.html" class="cursor-pointer !font-normal !text-base">Prestige</a>
                         </div>
                         <div class="">
                             <a href="godrej.html" class="cursor-pointer !font-normal !text-base">Godrej</a>
                         </div>
                         <div class="">
-                            <a href="samsung.html"
-                                class="cursor-pointer !font-normal !text-base">Samsung</a>
+                            <a href="samsung.html" class="cursor-pointer !font-normal !text-base">Samsung</a>
                         </div>
                         <div class="">
                             <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M
@@ -92,15 +94,13 @@
             <a href="contactus.html" class="text-nowrap cursor-pointer !font-bold !text-base">CONTACT US</a>
         </div>
         <div class="hidden md:block w-98vw ms-12 me-8 -mt-1 h-1 border-b-2 border-black rounded-2xl"></div>
-        <div class="flex flex-col lg:flex-row gap-6 lg:ml-12 lg:mt-12 p-4 sm:p-6">
+        <div class="grid md:grid-cols-3 gap-3 grid-cols-2 p-12">
+            <img class="min-w-[104px] min-h-[143px] md:w-[416px] md:h-[572px]" src="./imgs/Rectangle 83.png"
+                alt="Checked Duvet 1">
+            <img class="min-w-[104px] min-h-[143px] md:w-[416px] md:h-[572px]" src="./imgs/Rectangle 82.png"
+                alt="Checked Duvet 2">
 
-            <div class="flex flex-row gap-4 justify-center">
-                <img class="w-[104px] h-[143px] md:w-[416px] md:h-[572px]" src="./imgs/Rectangle 83.png"
-                    alt="Checked Duvet 1">
-                <img class="w-[104px] h-[143px] md:w-[416px] md:h-[572px]" src="./imgs/Rectangle 82.png"
-                    alt="Checked Duvet 2">
-            </div>
-            <div class="flex flex-col items-start mt-6 lg:mt-0 w-full max-w-[416px]">
+            <div class="flex flex-col items-start w-max">
                 <h1 class="text-lg font-semibold name">Checked Duvet Cover Set</h1>
                 <h2 class="text-base font-medium mb-1 price">$39.99</h2>
                 <p class="text-sm mb-1">Light Khaki Green / White Checks</p>
@@ -113,18 +113,20 @@
                 <div class="drop-cover w-full">
                     <div
                         class="drop-trigger border border-gray-400 flex flex-row items-center justify-between px-3 py-2 cursor-pointer">
-                        <span>Select size</span>
-                        <img src="./imgs/Vector 10.png" class="h-[6px] w-[12px] mr-2" alt="Dropdown arrow">
+                        <span class="w-full text-nowrap">Select size</span>
+                        <img src="./imgs/Vector 10.png" class="h-[6px] w-[12px] mr-2 " alt="Dropdown arrow">
                     </div>
-                    <div class="drop-content hidden bg-[#242424] text-white border-t border-white px-4 py-2 space-y-1">
+                    <div class="drop-content hidden bg-[white] border-1 border-[#f4e7e7] text-[#323334] px-4 py-2">
+                        <div class="close cursor-pointer flex justify-end">
+                            &#10005
+                        </div>
                         <p class="cursor-pointer">30 * 40</p>
                         <p class="cursor-pointer">20 * 30</p>
                         <p class="cursor-pointer">15 * 20</p>
                     </div>
                 </div>
-
                 <button
-                    class="w-full h-[40px] mt-4 bg-black text-white hover:bg-white hover:text-black transition-all duration-200"
+                    class="!w-full text-nowrap mt-4 bg-black text-white cursor-pointer "
                     onclick="store(this)">
                     ADD TO SHOPPING BAG
                 </button>
@@ -259,7 +261,7 @@
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
         </div>
 
-         <div class="h-auto w-full flex flex-col place-items-center gap-8 md:hidden bg-[#323334] text-white">
+        <div class="h-auto w-full flex flex-col place-items-center gap-8 md:hidden bg-[#323334] text-white">
             <h1 class="mt-6 mb-10 !text-white">URBAN OUTFITTERS</h1>
             <span class="flex flex-row">
                 <img src="./imgs/Vector (6).png">
@@ -404,9 +406,11 @@
             const contents = dropdown.querySelector(".drop-content");
             const trigger = dropdown.querySelector(".drop-trigger");
             const closeBtn = dropdown.querySelector(".close");
+
             trigger.addEventListener("click", () => {
                 contents.classList.remove("hidden");
                 contents.classList.add("flex", "flex-col");
+
             });
 
             closeBtn.addEventListener("click", () => {
