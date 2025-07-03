@@ -10,47 +10,49 @@
 
 <body>
     <div class="h-auto bg-white m-0 p-0 overflow-x-hidden">
-       <div class="flex flex-row justify-between items-center h-17">
+        <div class="flex flex-row justify-between items-center h-17">
             <span>
                 <h1 class="hidden md:block mx-12 py-7.5">MOODY STUDIO</h1>
                 <h1 class="mx-6 py-7.5 md:hidden !text-base !text-[#323334]">URBAN OUTFITTERS</h1>
             </span>
-            <span class="icon flex flex-row justify-center items-center space-x-4 mr-5 md:py-7.5">
+            <span class="icon flex gap-1 md:gap-4 flex-row justify-center items-center space-x-4 mr-5 md:py-7.5">
                 <input type="text" placeholder="Search here.."
                     class="search hidden md:w-50 md:h-6 md:placeholder:italic md:placeholder:text-gray-500 md:p-2 md:border-1 ">
-                <img class="hidden md:block h-5 w-5 cursor-pointer" src="./imgs/Vector.png" onclick="search()">
-                <img class="h-4 w-3 cursor-pointer" src="./imgs/Group 40.png">
-                <a href="shoppingbag.html"><img class="h-5 w-5 cursor-pointer" src="./imgs/Group 43.png"></a>
-                <img class="hidden md:block h-4 w-5 cursor-pointer" src="./imgs/Group.png">
+                <img class="hidden md:block cursor-pointer" src="./imgs/Vector.png" onclick="search()" />
+                <img class="h-[15.87px] w-[13.21px] md:h-[30px] md:w-[22px] cursor-pointer" src="./imgs/Group 40.png" />
+                <a href="shoppingbag.html"><img class="h-[18px] w-[18px]  md:h-[34px] md:w-[34px] cursor-pointer"
+                        src="./imgs/Group 43.png" /></a>
+                <img class="hidden md:block h-[28px] w-[29px] cursor-pointer" src="./imgs/Group.png">
                 <div class="drop-cover">
                     <div class="md:hidden text-2xl cursor-pointer relative drop-trigger">
-                        &#8801;
+                        <img class="md:hidden h-4 w-[26px]" src="./imgs/Group 224.png" />
                     </div>
-                    <div class="drop-content w-[140px] gap-[10px] p-5 hidden bg-[white] text-[#323334] absolute top-[43px] right-0 z-20">
+                    <div
+                        class="drop-content w-[140px] gap-[10px] p-5 hidden bg-[white] text-[#323334] absolute top-[43px] right-0 z-20">
                         <div class="close cursor-pointer flex justify-end">
                             &#10005
                         </div>
                         <div class="">
-                            <a href="index.html"
-                                class="cursor-pointer !font-normal !text-base">Home</a>
+                            <a href="orders.html" class="cursor-pointer !font-normal !text-base">Orders</a>
                         </div>
+                    
                         <div class="">
-                            <a href="prestige.html"
-                                class="cursor-pointer !font-normal !text-base">Prestige</a>
+                            <a href="prestige.html" class="cursor-pointer !font-normal !text-base">Prestige</a>
                         </div>
                         <div class="">
                             <a href="godrej.html" class="cursor-pointer !font-normal !text-base">Godrej</a>
                         </div>
                         <div class="">
-                            <a href="samsung.html"
-                                class="cursor-pointer !font-normal !text-base">Samsung</a>
+                            <a href="samsung.html" class="cursor-pointer !font-normal !text-base">Samsung</a>
                         </div>
                         <div class="">
-                            <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M
-                                Home</a>
+                            <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M Home</a>
                         </div>
                         <div class="">
                             <a href="curlon.html" class="cursor-pointer !font-normal !text-base">Curlon</a>
+                        </div>
+                        <div class="">
+                            <a href="news.html" class="cursor-pointer !font-normal !text-base"> News</a>
                         </div>
                     </div>
                 </div>
@@ -67,6 +69,9 @@
                 <div class="drop-content w-35 p-5 gap-[8px] hidden  bg-white text-[#323334] absolute top-30 z-2 ">
                     <div class="close cursor-pointer flex justify-end">
                         &#10005
+                    </div>
+                    <div class="">
+                        <a href="index.html" class="cursor-pointer !font-normal !text-base">Home</a>
                     </div>
                     <div class="">
                         <a href="prestige.html" class="cursor-pointer !font-normal !text-base">Prestige</a>
@@ -92,18 +97,45 @@
             <a href="contactus.html" class="text-nowrap cursor-pointer !font-bold !text-base">CONTACT US</a>
         </div>
         <div class="hidden md:block w-98vw ms-12 me-8 -mt-1 h-1 border-b-2 border-black rounded-2xl"></div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit fugit quos, dolorem suscipit adipisci
-            culpa odit, obcaecati expedita dolores iste quia distinctio minus sapiente aperiam aut ipsam doloribus
-            praesentium explicabo amet excepturi iure? Quaerat, similique qui? Et tempora aliquid consequuntur a
-            deleniti autem facere nisi, alias assumenda quae pariatur dignissimos illo iusto, dolor odit fugiat natus ad
-            laboriosam repellendus perspiciatis sit ipsum aspernatur. Sed praesentium architecto molestiae? Perspiciatis
-            hic aliquam magnam? Totam, sunt? Laborum quod, fugiat veniam consectetur sapiente dolorum? Aliquid porro
-            quae minima ab dolorem similique ad, ipsam odit aut provident incidunt commodi dolore sapiente, doloremque
-            id saepe.
-        </p>
+        
+        <header class="text-[#323334] py-6 text-center text-3xl font-bold">About US
+        </header>
+
+        <main class="px-4 sm:px-6 lg:px-20 py-10 space-y-12 max-w-5xl mx-auto">
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold">🛍 Our Story</h2>
+                <p class="!font-normal">Founded in 2025, Urban Outfitters was born with a simple goal: to make online shopping
+                    seamless, affordable, and accessible to every corner of India. What began as a small start-up is now
+                    a trusted shopping platform with thousands of happy customers.</p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold">🚀 Our Mission</h2>
+                <p class="!font-normal">We aim to empower people with fast, transparent, and reliable online shopping.
+                    From urban cities to remote villages, we’re bridging gaps through technology and customer-first
+                    thinking.</p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold">💡 What Makes Us Different?</h2>
+                <ul class="list-disc ml-5 space-y-2">
+                    <li>Same-day and next-day delivery in 100+ cities</li>
+                    <li>Affordable prices with monthly deals</li>
+                    <li>Easy returns and secure payments</li>
+                    <li>Customer-first support team</li>
+                </ul>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold">🤝 Meet the Team</h2>
+                <p class="!font-normal">Our team is made up of passionate developers, designers, customer service
+                    agents, and logistic experts — all working together to deliver the best shopping experience.</p>
+                <a href="" class="inline-block bg-[#323334] !text-white px-5 py-2 rounded">Meet the Team</a>
+            </section>
+        </main>
+    
     </div>
-     <div class="h-auto w-full flex flex-col place-items-center gap-8 md:hidden bg-[#323334] text-white">
+    <div class="h-auto w-full flex flex-col place-items-center gap-8 md:hidden bg-[#323334] text-white">
         <h1 class="mt-6 mb-10 !text-white">URBAN OUTFITTERS</h1>
         <span class="flex flex-row">
             <img src="./imgs/Vector (6).png">
@@ -130,7 +162,7 @@
 
     <div class="hidden md:flex bg-[#323334] text-white py-8 pl-6 flex-row justify-evenly items-start ">
         <div class="flex flex-col gap-6">
-            <h1 class="mb-5 !text-white ">URBAN OUTFITTERS</h1>
+            <h1 class="mb-5 !text-white text-nowrap">URBAN OUTFITTERS</h1>
             <p class="!text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur <br>Quo ratione officiis ipsum atque.
             </p>
@@ -170,12 +202,14 @@
         <div class="flex flex-col !text-base">
             <h2 class="mb-5 !text-white !text-base">FROM THE BLOG</h2>
             <p class="!text-gray-400">26th MAY</p>
-            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
+            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.
+                Nesciunt,
                 amet?</p>
             <p class="!text-gray-400 !font-light">3 comments</p>
             <div class="hidden md:block w-70 mt-2 mb-5 h-1 border-b-2 border-gray-500 rounded-2xl"></div>
             <p class="!text-gray-400">27th MAY</p>
-            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
+            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.
+                Nesciunt,
                 amet?</p>
             <p class="!text-gray-400 !font-light">3 comments</p>
         </div>
@@ -185,117 +219,16 @@
     </div>
 
     <script>
-
-        document.addEventListener("DOMContentLoaded", () => {
-            let orders = JSON.parse(localStorage.getItem("orders")) || [];
-            let container = document.querySelector(".order-container");
-            if (orders.length === 0) {
-                container.innerHTML = "<p class='text-center text-gray-500'>Your Orders is empty.</p>";
-                return;
-            }
-            orders.forEach((item, index) => {
-                const div = document.createElement("div");
-                div.className = "flex flex-row items-center justify-evenly w-screen md:w-140 my-2";
-                const img = document.createElement("img");
-                img.src = item.img;
-                img.className = "md:h-[180px] md:w-[130px] h-[80px] w-[80px] item-img";
-                const div2 = document.createElement("div");
-                div2.className = "flex flex-col";
-                const name = document.createElement("h1");
-                name.className = "name"
-                name.innerText = item.name;
-                const price = document.createElement("p");
-                price.className = "price"
-                price.innerText = item.price;
-                const date = document.createElement("p");
-                date.className = "date flex text-gray-500 text-sm";
-                date.innerText = item.dat;
-                const remvItm = document.createElement("img");
-                remvItm.src = "./imgs/Group 230.png";
-                remvItm.className = "h-[16px] w-[16px] md:ml-20";
-                div.appendChild(img);
-                div.appendChild(div2);
-                div.appendChild(remvItm);
-                div2.appendChild(name);
-                div2.appendChild(price);
-                div2.appendChild(date);
-                container.appendChild(div);
-                remvItm.addEventListener("click", () => {
-                    div.remove();
-
-                    orders = orders.filter((w) => !(w.img === item.img && w.name === item.name));
-                    if (orders.length === 0) {
-                        localStorage.removeItem("orders");
-                        container.innerHTML = "<p class='text-center text-gray-500 mt-10'>Your shopping bag is empty.</p>";
-                    } else {
-                        localStorage.setItem("orders", JSON.stringify(orders));
-                    }
-                })
-            })
-        }
-        )
-
-        function dotShow() {
-            let scrollContainer = document.getElementById("scroll");
-            let scrollLeft = scrollContainer.scrollLeft;
-            let itemWidth = scrollContainer.querySelector(".elem").offsetWidth + 16;
-            let index = Math.round(scrollLeft / itemWidth);
-            let dots = document.querySelectorAll(".dots");
-
-            dots.forEach((dot, i) => {
-                if (i === index) {
-                    dot.style.backgroundColor = "black";
-                }
-                else {
-                    dot.style.backgroundColor = "grey";
-                }
-            })
-        }
-        let slideIdx = 0;
-        function leftclick() {
-            let slide = document.querySelectorAll(".div");
-            for (let i = 0; i < slide.length; i++) {
-                slide[i].style.display = "none";
-            }
-            slideIdx--;
-            if (slideIdx < 0) {
-                slideIdx = slide.length - 1;
-            }
-            slide[slideIdx].style.display = "flex";
-            slide[slideIdx].style.flexDirection = "row";
-            slide[slideIdx].style.justifyContent = "center";
-            slide[slideIdx].style.alignItems = "center";
-            slide[slideIdx].style.marginTop = "24px";
-            slide[slideIdx].style.marginLeft = "20px";
-            slide[slideIdx].style.marginRight = "20px";
-            slide[slideIdx].style.gap = "16px";
-        }
-        function rightclick() {
-            let slide = document.querySelectorAll(".div");
-            for (let i = 0; i < slide.length; i++) {
-                slide[i].style.display = "none";
-            }
-            slideIdx++;
-            if (slideIdx >= slide.length) {
-                slideIdx = 0;
-            }
-            slide[slideIdx].style.display = "flex";
-            slide[slideIdx].style.flexDirection = "row";
-            slide[slideIdx].style.marginTop = "24px";
-            slide[slideIdx].style.marginLeft = "20px";
-            slide[slideIdx].style.marginRight = "20px";
-            slide[slideIdx].style.justifyContent = "center";
-            slide[slideIdx].style.alignItems = "center";
-            slide[slideIdx].style.gap = "16px";
-        }
         const cover = document.querySelectorAll(".drop-cover");
         cover.forEach(dropdown => {
             const contents = dropdown.querySelector(".drop-content");
             const trigger = dropdown.querySelector(".drop-trigger");
             const closeBtn = dropdown.querySelector(".close");
+
             trigger.addEventListener("click", () => {
                 contents.classList.remove("hidden");
                 contents.classList.add("flex", "flex-col");
+
             });
 
             closeBtn.addEventListener("click", () => {

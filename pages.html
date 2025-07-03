@@ -1,11 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pages</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos beatae odit quos expedita quod non molestiae, voluptate recusandae fugiat, fugit, cupiditate iusto facere possimus rerum aspernatur. Voluptatum cupiditate possimus repellat.
+   <div class="flex flex-row justify-between items-center h-17">
+            <span>
+                <h1 class="hidden md:block mx-12 py-7.5">MOODY STUDIO</h1>
+                <h1 class="mx-6 py-7.5 md:hidden !text-base !text-[#323334]">URBAN OUTFITTERS</h1>
+            </span>
+            <span class="icon flex gap-1 md:gap-4 flex-row justify-center items-center space-x-4 mr-5 md:py-7.5">
+                <input type="text" placeholder="Search here.."
+                    class="search hidden md:w-50 md:h-6 md:placeholder:italic md:placeholder:text-gray-500 md:p-2 md:border-1 ">
+                <img class="hidden md:block cursor-pointer" src="./imgs/Vector.png" onclick="search()" />
+                <img class="h-[15.87px] w-[13.21px] md:h-[30px] md:w-[22px] cursor-pointer" src="./imgs/Group 40.png" />
+                <a href="shoppingbag.html"><img class="h-[18px] w-[18px]  md:h-[34px] md:w-[34px] cursor-pointer"
+                        src="./imgs/Group 43.png" /></a>
+                <img class="hidden md:block h-[28px] w-[29px] cursor-pointer" src="./imgs/Group.png">
+                <div class="drop-cover">
+                    <div class="md:hidden text-2xl cursor-pointer relative drop-trigger">
+                        <img class="md:hidden h-4 w-[26px]" src="./imgs/Group 224.png" />
+                    </div>
+                    <div
+                        class="drop-content w-[140px] gap-[10px] p-5 hidden bg-[white] text-[#323334] absolute top-[43px] right-0 z-20">
+                        <div class="close cursor-pointer flex justify-end">
+                            &#10005
+                        </div>
+                        <div class="">
+                        <a href="index.html" class="cursor-pointer !font-normal !text-base">Home</a>
+                        </div>
+                        <div class="">
+                            <a href="orders.html" class="cursor-pointer !font-normal !text-base">Orders</a>
+                        </div>
+                        
+                        <div class="">
+                            <a href="prestige.html" class="cursor-pointer !font-normal !text-base">Prestige</a>
+                        </div>
+                        <div class="">
+                            <a href="godrej.html" class="cursor-pointer !font-normal !text-base">Godrej</a>
+                        </div>
+                        <div class="">
+                            <a href="samsung.html" class="cursor-pointer !font-normal !text-base">Samsung</a>
+                        </div>
+                        <div class="">
+                            <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M
+                                Home</a>
+                        </div>
+                        <div class="">
+                            <a href="curlon.html" class="cursor-pointer !font-normal !text-base">Curlon</a>
+                        </div>
+                        <div class="">
+                            <a href="news.html" class="cursor-pointer !font-normal !text-base">News</a>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="hidden md:block w-98vw ms-12 me-8 -mt-2 h-1 border-b-2 border-black rounded-2xl"></div>
+        <div class="hidden md:flex flex-row justify-evenly ml-[22px] py-6 w-98vw">
+            <a href="index.html" class="text-nowrap  cursor-pointer !font-bold !text-base">HOME</a>
+            <a href="" class="text-nowrap cursor-pointer !font-bold !text-base">STORE</a>
+            <a href="orders.html" class="text-nowrap cursor-pointer !font-bold !text-base">ORDERS</a>
+            <div class="drop-cover">
+                <div class="drop-trigger cursor-pointer relative font-bold text-base text-[#323334]"
+                    style="font-family: 'Roboto',sans-serif;">BRAND</div>
+                <div class="drop-content w-35 p-5 gap-[8px] hidden  bg-white text-[#323334] absolute top-30 z-2 ">
+                    <div class="close cursor-pointer flex justify-end">
+                        &#10005
+                    </div>
+                    <div class="">
+                        <a href="prestige.html" class="cursor-pointer !font-normal !text-base">Prestige</a>
+                    </div>
+                    <div class="">
+                        <a href="godrej.html" class="cursor-pointer !font-normal !text-base">Godrej</a>
+                    </div>
+                    <div class="">
+                        <a href="samsung.html" class="cursor-pointer !font-normal !text-base">Samsung</a>
+                    </div>
+                    <div class="">
+                        <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M Home</a>
+                    </div>
+                    <div class="">
+                        <a href="curlon.html" class="cursor-pointer !font-normal !text-base">Curlon</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="pages.html" class="text-nowrap cursor-pointer !font-bold !text-base">PAGES</a>
+            <a href="aboutus.html" class="text-nowrap cursor-pointer !font-bold !text-base">ABOUT US</a>
+            <a href="news.html" class="text-nowrap cursor-pointer !font-bold !text-base">NEWS</a>
+            <a href="contactus.html" class="text-nowrap cursor-pointer !font-bold !text-base">CONTACT US</a>
+        </div>
+        <div class="hidden md:block w-98vw ms-12 me-8 -mt-1 h-1 border-b-2 border-black rounded-2xl"></div>
+    <header class="text-[#323334] py-5 text-center text-3xl font-bold">
+        📚 Customer Info & Policies
+    </header>
+
+    <main class="px-4 sm:px-6 lg:px-20 py-10 max-w-5xl mx-auto space-y-10">
+        <section class="border-l-4 pl-4">
+            <h2 class="text-xl font-bold mb-1">📃 Terms & Conditions</h2>
+            <p class="!font-medium">By using MyShop, you agree to our terms of service, including fair usage, return
+                eligibility, and data handling. Please read all clauses before placing an order.</p>
+        </section>
+
+        <section class="border-l-4 pl-4">
+            <h2 class="text-xl font-bold mb-1">🔐 Privacy Policy</h2>
+            <p class="!font-medium">Your data is protected using the latest encryption protocols. We never share or sell
+                your information to third-party advertisers without your consent.</p>
+        </section>
+
+        <section class="border-l-4 pl-4">
+            <h2 class="text-xl font-bold mb-1">🔄 Return & Refund Policy</h2>
+            <p class="!font-medium">Returns are accepted within 7 days of delivery. Refunds are processed within 3-5
+                business days after successful inspection. Products must be unused and in original packaging.</p>
+        </section>
+
+        <section class="border-l-4 pl-4">
+            <h2 class="text-xl font-bold mb-1">🚚 Shipping Policy</h2>
+            <p class="!font-medium">Orders are dispatched within 24-48 hours. Delivery typically takes 2–5 working days
+                depending on location. Real-time tracking is available for all shipments.</p>
+        </section>
+
+        <section class="text-center mt-10">
+            <a href="/contactus.html" class="inline-block cursor-pointer !text-white px-6 py-3 !bg-[#323334]">Contact
+                Support</a>
+        </section>
+    </main>
+    <div class="h-auto w-full flex flex-col place-items-center gap-8 md:hidden bg-[#323334] text-white">
+        <h1 class="mt-6 mb-10 !text-white !text-[28px]">URBAN OUTFITTERS</h1>
+        <div class="flex flex-col items-center gap-3 mb-10">
+            <span class="flex flex-row">
+                <img src="./imgs/Vector (6).png">
+                <h1 class="!text-white ">166</h1>
+            </span>
+            <p class="!text-white">
+                121 King Street, Melbourn, 3000
+            </p>
+            <p class="!text-white">
+                contact@urbanooutfitters.com
+            </p>
+        </div>
+        <p class="!text-white">YOUR CART</p>
+        <a href="orders.html" class="cursor-pointer">
+            <p class="!text-white">YOUR ORDERS</p>
+        </a>
+        <p class="!text-white">COMPARED ITEMS</p>
+        <a href="shoppingbag.html" class="cursor-pointer">
+            <p class="!text-white">WHISTLIST ITEMS</p>
+        </a>
+        <p class="!text-white">SHIPPING DEAL</p>
+        <span class="flex flex-row gap-12 mb-8">
+            <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
+                src="./imgs/ant-design_instagram-filled.png" alt=""><img src="./imgs/vaadin_youtube.png" alt="">
+        </span>
+    </div>
+    <div class="hidden md:flex bg-[#323334] text-white py-8 pl-6 flex-row justify-evenly items-start ">
+        <div class="flex flex-col gap-6">
+            <h1 class="mb-5 !text-white">URBAN OUTFITTERS</h1>
+            <p class="!text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur <br>Quo ratione officiis ipsum atque.
+            </p>
+            <span class="flex flex-col gap-2">
+                <h2 class="!text-base !text-white">121 King Street, Melbourn, 3000</h2>
+                <h2 class="!text-base !text-white">contact@urbanooutfitters.com</h2>
+                <h2 class="!text-base !text-white">+6 324 589 451</h2>
+            </span>
+            <span class="flex flex-row gap-12 mt-4">
+                <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
+                    src="./imgs/ant-design_instagram-filled.png" alt=""><img src="./imgs/vaadin_youtube.png" alt="">
+            </span>
+        </div>
+        <div class="flex flex-col gap-1 mr-[2px]">
+            <h2 class="mb-5 !text-base !text-white">SHOPPING</h2>
+            <span class="!text-gray-400 flex flex-col gap-2">
+                <a href="" class="!text-gray-400 !font-light">Your Cart</a>
+                <a href="orders.html" class="!text-gray-400 !font-light">Your Orders</a>
+                <a href="" class="!text-gray-400 !font-light">Compared Items</a>
+                <a href="shoppingbag.html" class="cursor-pointer !text-gray-400 !font-light">
+                    Whistlist Items
+                </a>
+                <a href="" class="!text-gray-400 !font-light">Shipping Deal
+                </a>
+            </span>
+        </div>
+        <div class="flex flex-col gap-1 mr-[4px]">
+            <h2 class="mb-5 !text-base !text-white text-nowrap">MORE LINKS</h2>
+            <span class="text-gray-400 flex flex-col gap-2">
+                <a href="" class="!text-gray-400 !font-light">Blog</a>
+                <a href="" class="!text-gray-400 !font-light">Gift Center</a>
+                <a href="" class="!text-gray-400 !font-light">Buying Guides</a>
+                <a href="" class="!text-gray-400 !font-light">New Articles</a>
+                <a href="" class="!text-gray-400 !font-light">Clearance</a>
+            </span>
+        </div>
+        <div class="flex flex-col !text-base">
+            <h2 class="mb-5 !text-white !text-base">FROM THE BLOG</h2>
+            <p class="!text-gray-400">26th MAY</p>
+            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
+                amet?</p>
+            <p class="!text-gray-400 !font-light">3 comments</p>
+            <div class="hidden md:block w-70 mt-2 mb-5 h-1 border-b-2 border-gray-500 rounded-2xl"></div>
+            <p class="!text-gray-400">27th MAY</p>
+            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
+                amet?</p>
+            <p class="!text-gray-400 !font-light">3 comments</p>
+        </div>
+    </div>
+    <div class="bg-black w-full h-auto text-center block">
+        <p class="!text-sm !text-gray-400 p-3 "> Urban Outfitters © - All Rights Reserved</p>
+    </div>
+
+    <script>
+        const cover = document.querySelectorAll(".drop-cover");
+        cover.forEach(dropdown => {
+            const contents = dropdown.querySelector(".drop-content");
+            const trigger = dropdown.querySelector(".drop-trigger");
+            const closeBtn = dropdown.querySelector(".close");
+
+            trigger.addEventListener("click", () => {
+                contents.classList.remove("hidden");
+                contents.classList.add("flex", "flex-col");
+
+            });
+
+            closeBtn.addEventListener("click", () => {
+                contents.classList.add("hidden");
+                contents.classList.remove("flex", "flex-col");
+            });
+        })
+        function search() {
+            let search = document.querySelector(".search");
+            search.classList.toggle("block");
+            search.classList.toggle("hidden");
+        }
+    </script>
 </body>
+
 </html>

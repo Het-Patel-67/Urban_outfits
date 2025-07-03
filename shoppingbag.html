@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Bag</title>
     <link href="./output.css" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="h-auto bg-white m-0 p-0 overflow-x-hidden">
-       <div class="flex flex-row justify-between items-center h-17">
+        <div class="flex flex-row justify-between items-center h-17">
             <span>
                 <h1 class="hidden md:block mx-12 py-7.5">MOODY STUDIO</h1>
                 <h1 class="mx-6 py-7.5 md:hidden !text-base !text-[#323334]">URBAN OUTFITTERS</h1>
@@ -26,24 +30,26 @@
                     <div class="md:hidden text-2xl cursor-pointer relative drop-trigger">
                         &#8801;
                     </div>
-                    <div class="drop-content w-[140px] gap-[10px] p-5 hidden bg-[white] text-[#323334] absolute top-[43px] right-0 z-20">
+                    <div
+                        class="drop-content w-[140px] gap-[10px] p-5 hidden bg-[white] text-[#323334] absolute top-[43px] right-0 z-20">
                         <div class="close cursor-pointer flex justify-end">
                             &#10005
                         </div>
                         <div class="">
-                            <a href="index.html"
-                                class="cursor-pointer !font-normal !text-base">Home</a>
+                            <a href="index.html" class="cursor-pointer !font-normal !text-base">Home</a>
                         </div>
                         <div class="">
-                            <a href="prestige.html"
-                                class="cursor-pointer !font-normal !text-base">Prestige</a>
+                            <a href="orders.html" class="cursor-pointer !font-normal !text-base">Orders</a>
+                        </div>
+                       
+                        <div class="">
+                            <a href="prestige.html" class="cursor-pointer !font-normal !text-base">Prestige</a>
                         </div>
                         <div class="">
                             <a href="godrej.html" class="cursor-pointer !font-normal !text-base">Godrej</a>
                         </div>
                         <div class="">
-                            <a href="samsung.html"
-                                class="cursor-pointer !font-normal !text-base">Samsung</a>
+                            <a href="samsung.html" class="cursor-pointer !font-normal !text-base">Samsung</a>
                         </div>
                         <div class="">
                             <a href="handm.html" class="cursor-pointer !font-normal !text-base">H&M
@@ -51,6 +57,9 @@
                         </div>
                         <div class="">
                             <a href="curlon.html" class="cursor-pointer !font-normal !text-base">Curlon</a>
+                        </div>
+                        <div class="">
+                            <a href="contactus.html" class="cursor-pointer !font-normal !text-base">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -92,118 +101,164 @@
             <a href="contactus.html" class="text-nowrap cursor-pointer !font-bold !text-base">CONTACT US</a>
         </div>
         <div class="hidden md:block w-98vw ms-12 me-8 -mt-1 h-1 border-b-2 border-black rounded-2xl"></div>
-        <h1 class="text-center my-4">SHOPPING BAG</h1>
-        <div class="flex flex-col h-auto items-center wishlist-container">
+        <h1 class="text-center my-8">SHOPPING BAG</h1>
+        <div class="grid xl:grid-cols-[800px_1fr_510px] lg:grid-cols-2 grid-cols-1 lg:pl-12">
+            <div class="flex flex-col h-auto items-center lg:items-start gap-5 wishlist-container mb-8">
 
+            </div>
+            <div class="discount bg-[#ECEBE9B2] flex px-6 justify-center mx-5 flex-col gap-8 h-[510px] md:w-[435px]">
+                <div class="flex gap-3 flex-col">
+                    <label class="text-lg font-light text-[#323334]">ADD A DISCOUNT CODE</label>
+                    <div class="flex">
+                        <input type="text" placeholder=""
+                            class="bg-white text-2xl px-2 py-1 w-full h-[54px] outline-none" />
+                        <button class="bg-[#323334] text-white text-sm" on>ADD</button>
+                    </div>
+                </div>
+                <div class="flex gap-3 flex-col">
+                    <p class="text-[#323334] !font-light !text-lg mb-1">Log in to use your member offers.</p>
+                    <button
+                        class="!w-full bg-white font-semibold text-base !py-5 hover:bg-[#323334] hover:text-white cursor-pointer">LOG
+                        IN</button>
+                </div>
+
+                <div class="text-gray-800 text-xs space-y-1">
+                    <div class="flex justify-between">
+                        <span class="font-medium text-[#323334] text-base">Order value:</span>
+                        <span class="font-medium text-[#323334] text-base">82.98 $</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-medium text-[#323334] text-base">Shipping:</span>
+                        <span class="font-medium text-[#323334] text-base">0.0 $</span>
+                    </div>
+                    <div class="flex justify-between font-semibold">
+                        <span class="font-medium text-[#323334] text-base">Total</span>
+                        <span class="font-medium text-[#323334] text-base">82.98 $</span>
+                    </div>
+                </div>
+
+
+                <button class="w-full bg-gray-800 text-white !py-5 text-sm font-bold ">
+                    CONTINUE TO CHECKOUT
+                </button>
+            </div>
         </div>
-        <h1 class="mt-12 ml-12">Also like</h1>
-        <div class=" overflow-x-auto hidden sm:flex sm:flex-row sm:justify-center sm:items-center sm:mx-5 gap-4 mb-12">
+        <h1 class="mt-12 ml-6 md:ml-12">Also like</h1>
+        <div class=" overflow-x-auto hidden md:flex md:flex-row md:justify-center md:items-center md:mx-5 gap-4 mb-12">
             <div class="div flex flex-row justify-center items-center mt-12 mx-5 gap-4">
-                <img src="./imgs/Vector 13.png" class="w-[20px] h-[20px]" onclick="leftclick()">
+                <img src="./imgs/left_arrow.png" class="w-[45px] h-[32px]" onclick="leftclick()">
                 <div class="flex flex-col mb-4">
-                    <img src="./imgs/Rectangle 75.png" class="sm:w-[240px] sm:h-[300px] object-contain ">
-                    <div class="">
-                        <a href="handm.html">Flannel duvet cover set</a>
-                        <p>30$</p>
+                    <img src="./imgs/Rectangle 75.png"
+                        class="md:w-[240px] md:h-[174px] lg:h-[247px] xl:w-[306px] xl:h-[365px]">
+                    <div class="h-[70px] lg:h-[90px] flex flex-col justify-between lg:gap-3 mt-3">
+                        <a href="handm.html" class="!font-bold !text-sm lg:!text-lg">Flannel duvet cover set</a>
+                        <p class="!font-bold !text-lg lg:!text-[24px]">30$</p>
                     </div>
                 </div>
                 <div class="flex flex-col mb-4">
-                    <img src="./imgs/Rectangle 70.png" class="sm:w-[240px] sm:h-[300px] object-contain ">
-                    <div class="">
-                        <a href="handm.html">Ribbed-wool throw</a>
-                        <p>30$</p>
+                    <img src="./imgs/Rectangle 70.png"
+                        class="md:w-[240px] md:h-[174px] lg:h-[247px] xl:w-[306px] xl:h-[365px]">
+                    <div class="h-[70px] lg:h-[90px] flex flex-col justify-between lg:gap-3 mt-3">
+                        <a href="handm.html" class="!font-bold !text-sm lg:!text-lg">Ribbed-wool throw</a>
+                        <p class="!font-bold !text-lg lg:!text-[24px]">30$</p>
                     </div>
                 </div>
                 <div class="flex flex-col mb-4">
-                    <img src="./imgs/Rectangle 76.png" class="sm:w-[240px] sm:h-[300px] object-contain ">
-                    <div class="">
-                        <a href="handm.html">fitted cotton sheet</a>
-                        <p>30$</p>
+                    <img src="./imgs/Rectangle 76.png"
+                        class="md:w-[240px] md:h-[174px] lg:h-[247px] xl:w-[306px] xl:h-[365px]">
+                    <div class="h-[70px] lg:h-[90px] flex flex-col justify-between lg:gap-3 mt-3">
+                        <a href="handm.html" class="!font-bold !text-sm lg:!text-lg">Fitted cotton sheet</a>
+                        <p class="!font-bold !text-lg lg:!text-[24px]">30$</p>
                     </div>
                 </div>
                 <div class="flex flex-col mb-4">
-                    <img src="./imgs/Rectangle 67.png" class="sm:w-[240px] sm:h-[300px] object-contain ">
-                    <div class="">
-                        <a href="handm.html">Washed linen pillowcase</a>
-                        <p>30$</p>
+                    <img src="./imgs/Rectangle 67.png"
+                        class="md:w-[240px] md:h-[174px] lg:h-[247px] xl:w-[306px] xl:h-[365px]">
+                    <div class="h-[70px] lg:h-[90px] flex flex-col justify-between lg:gap-0 mt-3">
+                        <a href="handm.html" class="!font-bold !text-sm lg:!text-lg">Washed linen pillowcase</a>
+                        <p class="!font-bold !text-lg lg:!text-[24px]">30$</p>
                     </div>
                 </div>
-                <img src="./imgs/Vector 11.png" class="w-[20px] h-[20px]" onclick="rightclick()">
+                <img src="./imgs/right_arrow.png" class="w-[45px] h-[32px]" onclick="rightclick()">
             </div>
             <div class="div hidden">
-                <img src="./imgs/Vector 13.png" class="w-[20px] h-[20px]" onclick="leftclick()">
+                <img src="./imgs/left_arrow.png" class="w-[45px] h-[32px]" onclick="leftclick()">
                 <div class="flex flex-col mb-4">
-                    <img src="./imgs/Rectangle 67.png" class="sm:w-[240px] sm:h-[300px] object-contain ">
-                    <div class="">
-                        <a href="handm.html">Washed linen pillowcase</a>
-                        <p>30$</p>
+                    <img src="./imgs/Rectangle 30.png"
+                        class="md:w-[240px] md:h-[174px] lg:h-[247px]  xl:w-[306px] xl:h-[365px]">
+                    <div class="h-[70px] lg:h-[90px] flex flex-col justify-between lg:gap-0 mt-3">
+                        <a href="cup.html" class="!font-bold !text-sm lg:!text-lg">Egg Cup</a>
+                        <p class="!font-bold !text-lg lg:!text-[24px]">30$</p>
                     </div>
                 </div>
                 <div class="flex flex-col mb-4">
-                    <img src="./imgs/Rectangle 76.png" class="sm:w-[240px] sm:h-[300px] object-contain ">
-                    <div class="">
-                        <a href="handm.html">fitted cotton sheet</a>
-                        <p>30$</p>
+                    <img src="./imgs/Rectangle 12.png"
+                        class="md:w-[240px] md:h-[174px] lg:h-[247px]  xl:w-[306px] xl:h-[365px]">
+                    <div class="h-[70px] lg:h-[90px] flex flex-col justify-between lg:gap-3 mt-3">
+                        <a href="basket.html" class="!font-bold !text-sm lg:!text-lg">Metal Wire Basket</a>
+                        <p class="!font-bold !text-lg lg:!text-[24px]">30$</p>
                     </div>
                 </div>
                 <div class="flex flex-col mb-4">
-                    <img src="./imgs/Rectangle 70.png" class="sm:w-[240px] sm:h-[300px] object-contain ">
-                    <div class="">
-                        <a href="handm.html">Ribbed-wool throw</a>
-                        <p>30$</p>
+                    <img src="./imgs/Rectangle 8.png"
+                        class="md:w-[240px] md:h-[174px] lg:h-[247px]  xl:w-[306px] xl:h-[365px]">
+                    <div class="h-[70px] lg:h-[90px] flex flex-col justify-between lg:gap-3 mt-3">
+                        <a href="plates.html" class="!font-bold !text-sm lg:!text-lg">Ceramic Plates</a>
+                        <p class="!font-bold !text-lg lg:!text-[24px]">30$</p>
                     </div>
                 </div>
                 <div class="flex flex-col mb-4">
-                    <img src="./imgs/Rectangle 75.png" class="sm:w-[240px] sm:h-[300px] object-contain ">
-                    <div class="">
-                        <a href="handm.html">Flannel duvet cover set</a>
-                        <p>30$</p>
+                    <img src="./imgs/Bamboo_box.webp"
+                        class="md:w-[240px] md:h-[174px] lg:h-[247px]  xl:w-[306px] xl:h-[365px]">
+                    <div class="h-[70px] lg:h-[90px] flex flex-col justify-between lg:gap-3 mt-3">
+                        <a href="box.html" class="!font-bold !text-sm lg:!text-lg">Bamboo Box</a>
+                        <p class="!font-bold !text-lg lg:!text-[24px]">30$</p>
                     </div>
                 </div>
-                <img src="./imgs/Vector 11.png" class="w-[20px] h-[20px]" onclick="rightclick()">
+                <img src="./imgs/right_arrow.png" class="w-[45px] h-[32px]" onclick="rightclick()">
             </div>
         </div>
 
         <div id="scroll" onscroll="dotShow()"
-            class="h-70 w-full grid grid-rows-1 grid-flow-col gap-4 mt-6 pr-6 pl-6 overflow-x-auto overflow-y-hidden  md:hidden sm:hidden">
+            class="h-70 w-full grid grid-rows-1 grid-flow-col gap-4 mt-6 pr-6 pl-6 overflow-x-auto overflow-y-hidden  md:hidden">
             <div class="elem flex flex-col h-65 w-47 relative">
-                <img src="./imgs/Rectangle 6 (1).png" class="h-65 w-47">
+                <img src="./imgs/tray.jpg" class="h-65 w-47">
                 <div class="h-18 w-full p-2.5 bg-[#b7b79a60] absolute bottom-0">
-                    <h2><a href="towel.html">Linen Beach towel</a></h2>
-                    <h2>30$</h2>
+                    <a href="tray.html" class="!font-bold !text-[#00000080]">Tray</a>
+                    <h1 class="!text-[#00000080]">30$</h1>
                 </div>
             </div>
             <div class="elem flex flex-col h-65 w-47 relative">
-                <img src="./imgs/Rectangle 8.png" class="h-65 w-47">
+                <img src="./imgs/Rectangle 31.png" class="h-65 w-47">
                 <div class="absolute bottom-0 w-full h-18 p-2.5  bg-[#b7b79a60]">
-                    <h2><a href="plates.html">Ceramic plates</a></h2>
-                    <h2>14$</h2>
+                    <a href="towel.html" class="!font-bold !text-[#00000080]">Linen Nepkin</a>
+                    <h1 class="!text-[#00000080]">14$</h1>
                 </div>
             </div>
             <div class="elem flex flex-col h-65 w-47 relative">
-                <img src="./imgs/Rectangle 12.png" class="h-65 w-47 ">
+                <img src="./imgs/Rectangle 76.png" class="h-65 w-47 ">
                 <div class="absolute bottom-0 w-full h-18 p-2.5 bg-[#b7b79a60]">
-                    <h2><a href="basket.html">Metal wire basket</a></h2>
-                    <h2>20$</h2>
+                    <a href="handm.html" class="!font-bold !text-[#00000080]">Fitted Cotton Sheet</a>
+                    <h1 class="!text-[#00000080]">20$</h1>
                 </div>
             </div>
             <div class="elem flex flex-col h-65 w-47 relative">
-                <img src="./imgs/Rectangle 11.png" class="h-65 w-47">
+                <img src="./imgs/Rectangle 67.png" class="h-65 w-47">
                 <div class="absolute bottom-0 w-full h-18 p-2.5 bg-[#b7b79a60]">
-                    <h2><a href="jute.html"> Jute placement</a></h2>
-                    <h2>10$</h2>
+                    <a href="handm.html" class="!font-bold !text-[#00000080]">Washed Pillowcase</a>
+                    <h1 class="!text-[#00000080]">10$</h1>
                 </div>
             </div>
             <div class="elem flex flex-col h-65 w-47 relative">
                 <img src="./imgs/Rectangle 7.png" class="h-65 w-47 ">
                 <div class="absolute bottom-0 w-full h-18 p-2.5 bg-[#b7b79a60]">
-                    <h2><a href="glassbox.html">Large clear glass box</a></h2>
-                    <h2>12$</h2>
+                    <a href="glassbox.html" class="!font-bold !text-[#00000080]">Large clear glass box</a>
+                    <h1 class="!text-[#00000080]">12$</h1>
                 </div>
             </div>
         </div>
 
-        <div class="dot h-2 flex justify-center sm:hidden mb-3">
+        <div class="dot h-2 flex justify-center md:hidden mb-3">
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
@@ -211,84 +266,91 @@
             <span class="dots h-1.5 w-1.5 bg-[#00000080] border-black rounded-full mr-1"></span>
         </div>
         <div class="h-auto w-full flex flex-col place-items-center gap-8 md:hidden bg-[#323334] text-white">
-        <h1 class="mt-6 mb-10 !text-white">URBAN OUTFITTERS</h1>
-        <span class="flex flex-row">
-            <img src="./imgs/Vector (6).png">
-            <p class="!text-white">166</p>
-        </span>
-        <p class="!text-white">
-            121 King Street, Melbourn, 3000
-        </p>
-        <p class="!text-white">
-            contact@urbanooutfitters.com
-        </p>
-        <p class="!text-white">YOUR CARD</p>
-        <p class="!text-white">YOUR ORDERS</p>
-        <p class="!text-white">COMPARED ITEMS</p>
-        <a href="shoppingbag.html" class="cursor-pointer">
-            <p class="!text-white">WHISTLIST ITEMS</p>
-        </a>
-        <p class="!text-white">SHIPPING DEAL</p>
-        <span class="flex flex-row gap-12 mb-8">
-            <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
-                src="./imgs/ant-design_instagram-filled.png" alt=""><img src="./imgs/vaadin_youtube.png" alt="">
-        </span>
-    </div>
-    <div class="hidden md:flex bg-[#323334] text-white py-8 pl-6 flex-row justify-evenly items-start ">
-        <div class="flex flex-col gap-6">
-            <h1 class="mb-5 !text-white">URBAN OUTFITTERS</h1>
-            <p class="!text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur <br>Quo ratione officiis ipsum atque.
-            </p>
-            <span class="flex flex-col gap-2">
-                <h2 class="!text-base !text-white">121 King Street, Melbourn, 3000</h2>
-                <h2 class="!text-base !text-white">contact@urbanooutfitters.com</h2>
-                <h2 class="!text-base !text-white">+6 324 589 451</h2>
-            </span>
-            <span class="flex flex-row gap-12 mt-4">
+            <h1 class="mt-6 mb-10 !text-white !text-[28px]">URBAN OUTFITTERS</h1>
+            <div class="flex flex-col items-center gap-3 mb-10">
+                <span class="flex flex-row">
+                    <img src="./imgs/Vector (6).png">
+                    <h1 class="!text-white ">166</h1>
+                </span>
+                <p class="!text-white">
+                    121 King Street, Melbourn, 3000
+                </p>
+                <p class="!text-white">
+                    contact@urbanooutfitters.com
+                </p>
+            </div>
+            <p class="!text-white">YOUR CART</p>
+            <a href="orders.html" class="cursor-pointer">
+                <p class="!text-white">YOUR ORDERS</p>
+            </a>
+            <p class="!text-white">COMPARED ITEMS</p>
+            <a href="shoppingbag.html" class="cursor-pointer">
+                <p class="!text-white">WHISTLIST ITEMS</p>
+            </a>
+            <p class="!text-white">SHIPPING DEAL</p>
+            <span class="flex flex-row gap-12 mb-8">
                 <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
                     src="./imgs/ant-design_instagram-filled.png" alt=""><img src="./imgs/vaadin_youtube.png" alt="">
             </span>
         </div>
-        <div class="flex flex-col gap-1 mr-[2px]">
-            <h2 class="mb-5 !text-base !text-white">SHOPPING</h2>
-            <span class="!text-gray-400 flex flex-col gap-2">
-                <a href="" class="!text-gray-400 !font-light">Your Cart</a>
-                <a href="" class="!text-gray-400 !font-light">Your Orders</a>
-                <a href="" class="!text-gray-400 !font-light">Compared Items</a>
-                <a href="shoppingbag.html" class="cursor-pointer !text-gray-400 !font-light">
-                    Whistlist Items
-                </a>
-                <a href="" class="!text-gray-400 !font-light">Shipping Deal
-                </a>
-            </span>
+        <div class="hidden md:flex bg-[#323334] text-white py-8 pl-6 flex-row justify-evenly items-start ">
+            <div class="flex flex-col gap-6">
+                <h1 class="mb-5 !text-white">URBAN OUTFITTERS</h1>
+                <p class="!text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur <br>Quo ratione officiis ipsum atque.
+                </p>
+                <span class="flex flex-col gap-2">
+                    <h2 class="!text-base !text-white">121 King Street, Melbourn, 3000</h2>
+                    <h2 class="!text-base !text-white">contact@urbanooutfitters.com</h2>
+                    <h2 class="!text-base !text-white">+6 324 589 451</h2>
+                </span>
+                <span class="flex flex-row gap-12 mt-4">
+                    <img src="./imgs/Vector (7).png" alt=""><img src="./imgs/ant-design_instagram-filled.png"
+                        alt=""><img src="./imgs/ant-design_instagram-filled.png" alt=""><img
+                        src="./imgs/vaadin_youtube.png" alt="">
+                </span>
+            </div>
+            <div class="flex flex-col gap-1 mr-[2px]">
+                <h2 class="mb-5 !text-base !text-white">SHOPPING</h2>
+                <span class="!text-gray-400 flex flex-col gap-2">
+                    <a href="" class="!text-gray-400 !font-light">Your Cart</a>
+                    <a href="orders.html" class="!text-gray-400 !font-light">Your Orders</a>
+                    <a href="" class="!text-gray-400 !font-light">Compared Items</a>
+                    <a href="shoppingbag.html" class="cursor-pointer !text-gray-400 !font-light">
+                        Whistlist Items
+                    </a>
+                    <a href="" class="!text-gray-400 !font-light">Shipping Deal
+                    </a>
+                </span>
+            </div>
+            <div class="flex flex-col gap-1 mr-[4px]">
+                <h2 class="mb-5 !text-base !text-white text-nowrap">MORE LINKS</h2>
+                <span class="text-gray-400 flex flex-col gap-2">
+                    <a href="" class="!text-gray-400 !font-light">Blog</a>
+                    <a href="" class="!text-gray-400 !font-light">Gift Center</a>
+                    <a href="" class="!text-gray-400 !font-light">Buying Guides</a>
+                    <a href="" class="!text-gray-400 !font-light">New Articles</a>
+                    <a href="" class="!text-gray-400 !font-light">Clearance</a>
+                </span>
+            </div>
+            <div class="flex flex-col !text-base">
+                <h2 class="mb-5 !text-white !text-base">FROM THE BLOG</h2>
+                <p class="!text-gray-400">26th MAY</p>
+                <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.
+                    Nesciunt,
+                    amet?</p>
+                <p class="!text-gray-400 !font-light">3 comments</p>
+                <div class="hidden md:block w-70 mt-2 mb-5 h-1 border-b-2 border-gray-500 rounded-2xl"></div>
+                <p class="!text-gray-400">27th MAY</p>
+                <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit.
+                    Nesciunt,
+                    amet?</p>
+                <p class="!text-gray-400 !font-light">3 comments</p>
+            </div>
         </div>
-        <div class="flex flex-col gap-1 mr-[4px]">
-            <h2 class="mb-5 !text-base !text-white text-nowrap">MORE LINKS</h2>
-            <span class="text-gray-400 flex flex-col gap-2">
-                <a href="" class="!text-gray-400 !font-light">Blog</a>
-                <a href="" class="!text-gray-400 !font-light">Gift Center</a>
-                <a href="" class="!text-gray-400 !font-light">Buying Guides</a>
-                <a href="" class="!text-gray-400 !font-light">New Articles</a>
-                <a href="" class="!text-gray-400 !font-light">Clearance</a>
-            </span>
+        <div class="bg-black w-full h-auto text-center block">
+            <p class="!text-sm !text-gray-400 p-3 "> Urban Outfitters © - All Rights Reserved</p>
         </div>
-        <div class="flex flex-col !text-base">
-            <h2 class="mb-5 !text-white !text-base">FROM THE BLOG</h2>
-            <p class="!text-gray-400">26th MAY</p>
-            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
-                amet?</p>
-            <p class="!text-gray-400 !font-light">3 comments</p>
-            <div class="hidden md:block w-70 mt-2 mb-5 h-1 border-b-2 border-gray-500 rounded-2xl"></div>
-            <p class="!text-gray-400">27th MAY</p>
-            <p class="!text-gray-400 !font-light">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nesciunt,
-                amet?</p>
-            <p class="!text-gray-400 !font-light">3 comments</p>
-        </div>
-    </div>
-    <div class="bg-black w-full h-auto text-center block">
-        <p class="!text-sm !text-gray-400 p-3 "> Urban Outfitters © - All Rights Reserved</p>
-    </div>
     </div>
     <script>
         function search() {
@@ -364,65 +426,132 @@
                 contents.classList.remove("flex", "flex-col");
             });
         })
+        window.onload = function () {
 
-        document.addEventListener("DOMContentLoaded", () => {
             let wishlist = JSON.parse(localStorage.getItem("whishlist")) || [];
+            const discount = document.querySelector(".discount");
             const container = document.querySelector(".wishlist-container");
             if (wishlist.length === 0) {
-                container.innerHTML = "<p class='text-center text-gray-500'>Your Wishlist is empty.</p>";
+                discount.classList.add("hidden");
+            }
+            else {
+                discount.classList.remove("hidden")
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            let wishlist = JSON.parse(localStorage.getItem("whishlist")) || [];
+            const container = document.querySelector(".wishlist-container");
+
+            if (wishlist.length === 0) {
+                container.innerHTML = "<p class='text-center w-full !font-medium absolute left-0 text-[#323334]'>Your Wishlist is empty.</p>";
+                // window.onload=container;
                 return;
             }
             wishlist.forEach((item, index) => {
+                const dat = new Date();
+                function getFormattedDateTime() {
+                    return dat.toLocaleString('en-IN', {
+                        timeZone: 'Asia/Kolkata',
+                        day: 'numeric',
+                        month: 'long',
+                        year: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        hour12: true
+                    });
+                }
+
                 const div = document.createElement("div");
-                div.className = "flex flex-row items-center justify-evenly w-screen md:w-140 my-2";
+                div.className = "parent-div flex flex-row lg:items-start justify-between w-full px-5 md:px-10 lg:px-0 lg:w-full md:gap-3 flex-1";
                 const img = document.createElement("img");
                 img.src = item.img;
-                img.className = "md:h-[180px] md:w-[130px] h-[80px] w-[80px] item-img";
-
+                img.className = "md:h-[200px] md:w-[150px] h-[170px] w-[90px] item-img";
                 const div2 = document.createElement("div");
-                div2.className = "flex flex-col";
+                div2.className = "flex flex-col ml-3 gap-1 md:gap-3 items-start flex-1";
                 const name = document.createElement("h1");
-                name.className = "name"
+                name.className = "name md:!font-bold !font-medium !text-base md:text-nowrap";
                 name.innerText = item.name;
                 const price = document.createElement("p");
-                price.className = "price"
+                price.className = "price !font-medium !text-base ";
                 price.innerText = item.price;
                 const date = document.createElement("p");
                 date.className = "date hidden bg-yellow-400";
                 const btn = document.createElement("button");
                 btn.innerText = "Order now";
-                btn.className = "text-center p-1 bg-gray-500 text-white cursor-pointer";
+                btn.className = "text-center bg-[#323334] text-white text-nowrap cursor-pointer";
+                const div3 = document.createElement("div");
+                div3.className = "flex flex-row gap-9 items-start";
+                 const div4 = document.createElement("div");
+                div4.className = "flex flex-row gap-2 items-start";
+                const art = document.createElement("p");
+                art.innerText = item.article;
+                art.className = "!text-base !font-medium";
+                const size = document.createElement("p");
+                size.innerText = `Size:- ${item.selectedSize}`;
+                size.className = "!text-base !font-medium";
+                const likeDiv = document.createElement("div");
+                likeDiv.className="h-[31px] w-[31px] border border-[#0000004D]"
+                const like = document.createElement("img");
+                like.src = "./imgs/Group.png";
+                like.className = "like h-6 m-[2px]";
+                img.classList.add("like-icon");
+                const dropContainer = document.createElement("div");
+                dropContainer.id = "quantityContainer";
+                
                 const remvItm = document.createElement("img");
                 remvItm.src = "./imgs/Group 230.png";
-                remvItm.className = "h-[16px] w-[16px] md:ml-20";
+                remvItm.className = "h-[16px] w-[16px]";
+                const select = document.createElement("select");
+                select.id = "quantitySelect";
+                select.className = "px-4 py-[3px] border border-[#0000004D]";
+
+                for (let i = 1; i <= 5; i++) {
+                    const option = document.createElement("option");
+                    option.value = i;
+                    option.textContent = i;
+                    select.appendChild(option);
+                }
+                dropContainer.appendChild(select);
 
                 div.appendChild(img);
                 div.appendChild(div2);
-                div.appendChild(btn);
                 div.appendChild(date);
                 div.appendChild(remvItm);
                 div2.appendChild(name);
                 div2.appendChild(price);
+                div2.appendChild(div3);
+                div3.appendChild(art);
+                div3.appendChild(size);
+                div2.appendChild(div4);
+                div4.appendChild(likeDiv);
+                likeDiv.appendChild(like);
+                div4.appendChild(dropContainer);
+                div2.appendChild(btn);
                 container.appendChild(div);
+                like.addEventListener("click", () => {
+                    if (like.classList.contains("liked")) {
+                        like.src = "./imgs/Group.png";
+                        like.classList.remove("liked");
+                    } else {
+                        like.src = "./imgs/Heart_pink.png";
+                        like.classList.add("liked");
+                    }
+                });
 
                 btn.addEventListener("click", function store(e) {
-                    const item = e.target.parentElement;
+                    const item = e.target.closest("div.parent-div");
                     const img = item.querySelector(".item-img").getAttribute("src");
                     const name = item.querySelector(".name").innerText;
                     const price = item.querySelector(".price").innerText;
-                    let dat = new Date();
-                    dat.setMinutes(dat.getMinutes() + 330);
-                    let timeString =
-                        "Date: " + dat.getDate() + " " +
-                        (dat.getHours() < 10 ? "0" : "") + dat.getHours() + ":" +
-                        (dat.getMinutes() < 10 ? "0" : "") + dat.getMinutes();
-                    date.innerText = timeString;
+
 
                     const itemObj = {
                         img: img,
                         name: name,
                         price: price,
-                        dat: dat
+                        dat: getFormattedDateTime()
                     }
 
                     const orders = JSON.parse(localStorage.getItem("orders")) || [];
@@ -432,7 +561,6 @@
                         localStorage.setItem("orders", JSON.stringify(orders));
                         alert("Order placed successfully");
                     }
-
                 })
                 remvItm.addEventListener("click", () => {
                     div.remove();
@@ -446,6 +574,8 @@
                     }
                 })
             })
+
+
 
         }
         )
